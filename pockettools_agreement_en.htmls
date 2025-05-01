@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Agreement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ff9e00;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        ul {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section id="user-agreement">
+            <h2>User Agreement</h2>
+            <p><strong>Last Updated: May 1, 2025</strong></p>
+
+            <p>Welcome to use the "Pocket Tools" APP (hereinafter referred to as "the product"). Before using this product, please carefully read the following user agreement (hereinafter referred to as "this agreement"). This agreement applies to all users of this product and is established between you and the company. By using this product, you confirm that you have read, understood, and agree to all the terms of this agreement. If you disagree with any part of this agreement, please do not use this product.</p>
+
+            <h3>1. Service Content</h3>
+            <ul>
+                <li><span class="section-title">Service Scope:</span> The company provides services such as downloading, installation, usage, updates, and technical support for this product. The specific service content may change with updates to the product, and users can view the updated version of this agreement at any time.</li>
+                <li><span class="section-title">Service Interruption and Termination:</span> The company has the right to adjust, suspend, or terminate part or all of the services at any time without prior notice to the users. However, the company will make efforts to notify users before service interruption or termination.</li>
+            </ul>
+
+            <h3>2. User Behavior Standards</h3>
+            <ul>
+                <li><span class="section-title">Legal Use:</span> Users should use the product legally in accordance with national laws, regulations, and this agreement. It is prohibited to use the product for any illegal, infringing, harmful to public safety, or damaging the company's interests activities.</li>
+                <li><span class="section-title">Prohibited Content Upload:</span> Users shall not upload, spread, or publish any illegal, pornographic, defamatory, violent, malicious, or infringing content on the product.</li>
+                <li><span class="section-title">Intellectual Property:</span> The product and all its contents, technology, and data, including but not limited to software code, images, text, audio, and video files, are the property of the company or its licensors and are protected by copyright and other intellectual property laws. Users shall not copy, modify, distribute, display, transfer, or otherwise infringe on the company's or third parties' intellectual property without authorization.</li>
+            </ul>
+
+            <h3>3. Privacy Protection</h3>
+            <ul>
+                <li><span class="section-title">Privacy Policy:</span> The company promises to respect the user's privacy rights and protect the security of user personal information. For specific personal information collection, use, and protection measures, please refer to the company's Privacy Policy.</li>
+                <li><span class="section-title">Information Security:</span> The company will take reasonable security measures to protect users' personal information from unauthorized access, use, or disclosure. However, users should understand that no internet transmission can be 100% secure, and the company cannot guarantee absolute security.</li>
+            </ul>
+
+            <h3>4. Service Fees and Payment</h3>
+            <ul>
+                <li><span class="section-title">Fee Description:</span> The basic functions of this product can be used for free, but some advanced functions or services may require users to pay corresponding fees. The specific fee standards are listed in the product's in-app payment instructions.</li>
+                <li><span class="section-title">Payment Terms:</span> Users agree to pay fees as agreed. If the user does not pay on time, their access to related functions of the product may be affected.</li>
+            </ul>
+
+            <h3>5. Disclaimer and Limitation of Liability</h3>
+            <ul>
+                <li><span class="section-title">Product Quality:</span> The company does not guarantee that the product is free of defects, errors, or fully meets the user's expectations. Except as otherwise required by law, the company shall not be liable for any direct or indirect loss caused by the use of this product.</li>
+                <li><span class="section-title">Force Majeure:</span> The company shall not be liable for any service interruption or inability to use the product due to force majeure events such as natural disasters, government actions, wars, or internet service interruptions.</li>
+            </ul>
+
+            <h3>6. Modification and Update of Agreement</h3>
+            <ul>
+                <li><span class="section-title">Agreement Modification:</span> The company has the right to modify this agreement at any time and publish the updated agreement within the product. Users should regularly check the latest version of the agreement. If users continue to use the product, they are deemed to accept the modified agreement.</li>
+                <li><span class="section-title">Agreement Termination:</span> If the user violates any terms of this agreement, the company has the right to unilaterally terminate this agreement and stop providing services.</li>
+            </ul>
+
+            <h3>7. Applicable Law and Dispute Resolution</h3>
+            <ul>
+                <li><span class="section-title">Applicable Law:</span> This agreement is governed by the laws of the People's Republic of China.</li>
+                <li><span class="section-title">Dispute Resolution:</span> In case of any dispute arising from this agreement, both parties should resolve it through friendly consultation. If consultation fails, either party may file a lawsuit in the People's Court where the company is located.</li>
+            </ul>
+
+            <h3>8. Miscellaneous</h3>
+            <ul>
+                <li><span class="section-title">Agreement Effect:</span> This agreement becomes effective when the user clicks "Agree" or starts using the product.</li>
+                <li><span class="section-title">Severability:</span> If any provision of this agreement is deemed invalid or unenforceable by a court, the remaining provisions shall remain in full force and effect.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
