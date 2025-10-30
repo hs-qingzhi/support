@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaKeeper APP User Agreement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1E1F24; /* AppColors.textPrimary */
+            background: #F5F6F9; /* AppColors.pageBackground */
+            min-height: 100vh;
+            padding: 0; /* Flutter already provides 16px left/right and 9px top padding */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF; /* AppColors.white */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* AppColors.brandPrimary -> brandPrimaryDark */
+            color: #FFFFFF;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content { padding: 16px; }
+        
+        .update-date {
+            background: #F8FFF0; /* Light brand green background */
+            border-left: 4px solid #76E200; /* AppColors.brandPrimary */
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: #6E7183; /* AppColors.textSecondary */
+        }
+        
+        h2 {
+            color: #1E1F24; /* textPrimary */
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #76E200;
+            position: relative;
+        }
+        
+        h3 {
+            color: #1E1F24;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 16px 0 12px 0;
+            padding-left: 12px;
+            border-left: 3px solid #76E200;
+        }
+        
+        p {
+            font-size: 0.95rem;
+            color: #6E7183; /* textSecondary */
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            padding: 12px 12px;
+            background: #FAFBFC;
+            border-radius: 8px;
+            border-left: 3px solid #76E200;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        li:hover { background: #F3FCE8; }
+        
+        .section-title {
+            font-weight: 700;
+            color: #1E1F24;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .header { padding: 20px 16px; }
+            .header h1 { font-size: 1.3rem; }
+            .content { padding: 12px; }
+            h2 { font-size: 1.1rem; }
+            h3 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VitaKeeper APP User Agreement</h1>
+            <div class="subtitle">用户协议</div>
+        </div>
+        
+        <div class="content">
+            <div class="update-date">
+                📅 Last Updated: December 01, 2025
+            </div>
+
+            <p>Welcome to VitaKeeper APP (hereinafter referred to as "this product"). Before using this product, please carefully read the following user agreement (hereinafter referred to as "this agreement"). This agreement applies to all users of this product and is entered into between you and us (hereinafter referred to as "we" or "the company"). By using this product, you indicate that you have read, understood, and agree to all terms of this agreement. If you do not agree to any content of this agreement, please do not use this product.</p>
+
+            <h3>I. Service Content</h3>
+            <ul>
+                <li><span class="section-title">Service Scope:</span> The company provides download, installation, use, and updates of this product, including but not limited to: health data recording (blood pressure, blood sugar, blood lipids, BMI, etc.), health reminders and care plan management, family member health record management, health data statistical analysis and report generation, OCR image recognition functionality, health standards query, and other services. Specific service content may change with product updates, and users can check the latest version of this agreement at any time.</li>
+                <li><span class="section-title">Service Interruption and Termination:</span> The company reserves the right to adjust, suspend, or terminate part or all services at any time without prior notice to users. However, the company should make every effort to inform users before service interruption or termination.</li>
+            </ul>
+
+            <h3>II. User Behavior Standards</h3>
+            <ul>
+                <li><span class="section-title">Legal Use:</span> Users promise to use this product only for legal purposes and shall not use this product to engage in any illegal, non-compliant, or activities that harm others' rights and interests.</li>
+                <li><span class="section-title">Data Authenticity:</span> Users should ensure that the input health data is true and accurate, and shall not intentionally input false information. False data may affect the accuracy of health analysis and even mislead user health.</li>
+                <li><span class="section-title">Account Security:</span> Users are responsible for protecting their account security and shall not disclose account information to others. If account theft is discovered, contact us immediately.</li>
+                <li><span class="section-title">Prohibited Behavior:</span> Users shall not engage in the following behaviors: reverse engineering, cracking, modifying this product; spreading viruses, malicious code; interfering with the normal operation of this product; infringing on others' intellectual property rights, etc.</li>
+            </ul>
+
+            <h3>III. Privacy and Information Security</h3>
+            <ul>
+                <li><span class="section-title">Privacy Policy:</span> The company promises to respect users' privacy rights and protect the security of users' personal information and health data. For specific personal information collection, use, and protection measures, please refer to the company's "Privacy Policy".</li>
+                <li><span class="section-title">Information Security:</span> The company will take reasonable security measures to protect users' personal information and health data from unauthorized access, use, or disclosure. However, users should understand that no internet transmission can be 100% secure, and the company cannot guarantee absolute security.</li>
+            </ul>
+
+            <h3>IV. Service Fees and Payment</h3>
+            <ul>
+                <li><span class="section-title">Fee Description:</span> This product is currently free to use, and all functions including health data recording, analysis, reminders, family member management, etc. do not charge fees. If paid functions are introduced in the future, we will notify users in advance and update this agreement.</li>
+                <li><span class="section-title">Third-party Services:</span> This product may use third-party services (such as Umeng statistics, Baidu OCR, etc.), and the costs of these services are borne by us and will not be charged to users.</li>
+            </ul>
+
+            <h3>V. Disclaimer and Liability Limitation</h3>
+            <ul>
+                <li><span class="section-title">Health Information Notice:</span> The blood pressure, blood sugar, blood lipids, BMI data recording and analysis provided by this product are for reference only and are not intended as medical diagnosis or treatment basis. Users should combine their own situation when using this product and consult professional medical institutions when necessary.</li>
+                <li><span class="section-title">Product Quality:</span> The company does not guarantee that this product is defect-free, error-free, or fully meets users' expectations. For any direct or indirect losses arising from the use of this product, unless otherwise required by law, the company shall not bear any responsibility.</li>
+                <li><span class="section-title">Force Majeure:</span> The company shall not be responsible for service interruption or inability to use normally due to force majeure events such as natural disasters, government actions, war, internet service interruption, etc.</li>
+            </ul>
+
+            <h3>VI. Agreement Modification and Updates</h3>
+            <ul>
+                <li><span class="section-title">Agreement Modification:</span> The company has the right to modify this agreement at any time and publish the updated agreement content within this product. Users should regularly check the latest version of the agreement. If users continue to use this product, it is deemed to accept the modified agreement.</li>
+                <li><span class="section-title">Agreement Termination:</span> If users violate any terms of this agreement, the company has the right to unilaterally terminate this agreement and stop providing services.</li>
+            </ul>
+
+            <h3>VII. Legal Application and Dispute Resolution</h3>
+            <ul>
+                <li><span class="section-title">Legal Application:</span> This agreement is governed by the laws of the People's Republic of China.</li>
+                <li><span class="section-title">Dispute Resolution:</span> If any disputes arise from this agreement, both parties should resolve them through friendly consultation. If consultation fails, either party may file a lawsuit with the people's court where the company is located.</li>
+            </ul>
+
+            <h3>VIII. Supplementary Provisions</h3>
+            <ul>
+                <li><span class="section-title">Agreement Effectiveness:</span> This agreement takes effect from the date when users click "Agree" or start using this product.</li>
+                <li><span class="section-title">Independent Terms:</span> If any terms in this agreement are determined by the court to be invalid or unenforceable, the remaining terms remain valid.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

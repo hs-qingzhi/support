@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaKeeper APP プライバシーポリシー</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1E1F24; /* AppColors.textPrimary */
+            background: #F5F6F9; /* AppColors.pageBackground */
+            min-height: 100vh;
+            padding: 0; /* Flutterが左右16px、上部9pxのパディングを提供 */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF; /* AppColors.white */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* 統一ブランドカラー */
+            color: #FFFFFF;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="privacy-grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="white" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="5" r="0.5" fill="white" opacity="0.1"/><circle cx="5" cy="70" r="0.5" fill="white" opacity="0.1"/><circle cx="95" cy="30" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23privacy-grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content { padding: 16px; }
+        
+        .update-date {
+            background: #F8FFF0;
+            border-left: 4px solid #76E200;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: #6E7183; /* textSecondary */
+        }
+        
+        h2 {
+            color: #1E1F24;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #76E200;
+            position: relative;
+        }
+        
+        p {
+            font-size: 0.95rem;
+            color: #6E7183;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        .section {
+            margin-bottom: 16px;
+            background: #FAFBFC;
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #76E200;
+            transition: all 0.2s ease;
+        }
+        
+        .section:hover { background: #F3FCE8; }
+        
+        li {
+            margin-bottom: 12px;
+            padding: 12px 12px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            border-left: 3px solid #76E200;
+            transition: all 0.2s ease;
+            position: relative;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+        
+        li:hover { background: #FFFFFF; }
+        
+        .highlight {
+            font-weight: 700;
+            color: #1E1F24;
+            display: inline-block;
+            margin-right: 8px;
+            background: #F8FFF0;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .icon {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+        
+        @media (max-width: 768px) {
+            .header { padding: 20px 16px; }
+            .header h1 { font-size: 1.3rem; }
+            .content { padding: 12px; }
+            .section { padding: 12px; }
+            h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VitaKeeper APP プライバシーポリシー</h1>
+            <div class="subtitle">プライバシーポリシー</div>
+        </div>
+        
+        <div class="content">
+            <div class="update-date">
+                🔒 最終更新：2025年12月01日
+            </div>
+            
+            <p>VitaKeeper APPは、血圧、血糖、血中脂質、BMIデータの記録、健康リマインダー、家族メンバー管理、データ統計分析、OCR画像認識等の機能を提供する健康管理アプリケーションです。私たちはお客様の個人情報と健康データを非常に重視し、お客様の情報セキュリティを最大限に保護いたします。本プライバシーポリシーは関連する法律法規に基づいて策定され、私たちがどのようにお客様の情報を収集、利用、保存、保護するかを明確に説明いたします。</p>
+            
+            <div class="section">
+                <h2><span class="icon">📊</span>第1条 情報収集の方法と範囲</h2>
+        <ul>
+            <li><span class="highlight">1.1 健康データ収集</span>：お客様がVitaKeeper APPで血圧、血糖、血中脂質、BMI等の健康情報を記録する際、私たちは健康分析、トレンドリマインダー、レポート生成のために関連データを収集いたします。お客様はいつでもAPP内でご自身の健康データを確認、修正、削除することができます。</li>
+            <li><span class="highlight">1.2 基本デバイス情報</span>：より安定した個別化されたサービスを提供するため、お客様がプライバシーポリシーに同意された後、デバイスハードウェア情報（デバイスモデル、オペレーティングシステムバージョン、デバイスシリアル番号等）を収集する場合があります。これらは統計とサービス体験の最適化に使用されます。</li>
+            <li><span class="highlight">1.3 第三者サービス利用</span>：一部の機能は第三者サービスに依存して実装される場合があります。これらのサービスは、ユーザーがプライバシーポリシーに同意した後にのみ実行されます。具体的には以下が含まれます：
+                <ul>
+                    <li><strong>友盟統計サービス</strong>：APP利用状況統計とパフォーマンス最適化に使用されます。サービスはデバイス情報を収集する場合がありますが、お客様の健康データは収集しません。</li>
+                    <li><strong>友盟プッシュサービス</strong>：お客様に健康リマインダーと重要な通知を送信するために使用されます。</li>
+                    <li><strong>百度OCRサービス</strong>：健康デバイス画面のデータを認識し、データ入力効率を向上させるために使用されます。</li>
+                </ul>
+            </li>
+            <li><span class="highlight">1.4 ユーザーフィードバックと苦情</span>：お客様はAPPの「マイ」ページの「問題フィードバック」機能を通じてフィードバックや苦情を提出することができ、個人情報や健康データに関わる場合は、プライバシーポリシーに従って厳格に処理いたします。</li>
+        </ul>
+    </div>
+
+            <div class="section">
+                <h2><span class="icon">🔐</span>第2条 情報利用目的</h2>
+                <ul>
+                    <li>健康データ記録、分析、トレンドリマインダーサービスの提供。</li>
+                    <li>製品機能とユーザー体験の最適化。</li>
+                    <li>重要な健康リマインダーと通知の送信。</li>
+                    <li>製品利用状況統計の実施、サービス品質向上の支援。</li>
+                    <li>ユーザーフィードバックとテクニカルサポートリクエストの処理。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🛡️</span>第3条 情報保護措置</h2>
+                <ul>
+                    <li>業界標準の暗号化技術を使用してお客様のデータ伝送と保存セキュリティを保護いたします。</li>
+                    <li>従業員の個人情報へのアクセス権限を厳格に制限し、必要な人員のみにデータ処理を許可いたします。</li>
+                    <li>定期的なセキュリティ監査と脆弱性検出を実施し、セキュリティ問題を迅速に修正いたします。</li>
+                    <li>法律法規で要求される場合またはユーザーセキュリティを確保する場合を除き、お客様の健康データを無関係な第三者に販売、共有、漏洩しないことを約束いたします。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">⚖️</span>第4条 ユーザー権利</h2>
+                <ul>
+                    <li>お客様はご自身の健康データにアクセス、修正、削除する権利があります。</li>
+                    <li>一部のデータ収集や機能からオプトアウトすることを選択できますが、一部のサービス体験に影響する場合があります。</li>
+                    <li>法律で許可される範囲内で、いつでもプライバシーポリシーへの同意を取り消すことができます。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🔄</span>第5条 ポリシー更新</h2>
+                <ul>
+                    <li>法律法規および製品更新に基づいて本プライバシーポリシーを変更する場合があり、APP内で更新版を公表いたします。</li>
+                    <li>APPの継続利用は、更新されたプライバシーポリシーへの同意を意味します。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

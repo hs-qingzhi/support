@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>康护APP隐私政策</title>
+    <title>VitaKeeper APP Privacy Policy</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             color: #1E1F24; /* AppColors.textPrimary */
             background: #F5F6F9; /* AppColors.pageBackground */
             min-height: 100vh;
-            padding: 0; /* 外层Flutter已提供左右16与顶部9的间距 */
+            padding: 0; /* Flutter already provides 16px left/right and 9px top padding */
         }
         
         .container {
@@ -30,7 +30,7 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* 统一品牌色系 */
+            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* Unified brand color scheme */
             color: #FFFFFF;
             padding: 24px 20px;
             text-align: center;
@@ -56,9 +56,10 @@
             z-index: 1;
         }
         
-        .header .subtitle {
-            font-size: 1.1rem;
+        .subtitle {
+            font-size: 0.9rem;
             opacity: 0.9;
+            font-weight: 400;
             position: relative;
             z-index: 1;
         }
@@ -85,16 +86,6 @@
             position: relative;
         }
         
-        h2::before {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(90deg, #ff6b6b, #ffa726);
-        }
-        
         p {
             font-size: 0.95rem;
             color: #6E7183;
@@ -112,12 +103,6 @@
         }
         
         .section:hover { background: #F3FCE8; }
-        
-        ul {
-            margin: 20px 0;
-            padding-left: 0;
-            list-style: none;
-        }
         
         li {
             margin-bottom: 12px;
@@ -143,9 +128,8 @@
         }
         
         .icon {
-            display: inline-block;
             margin-right: 8px;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
         
         @media (max-width: 768px) {
@@ -160,63 +144,68 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>康护APP隐私政策</h1>
-            <div class="subtitle">Privacy Policy</div>
+            <h1>VitaKeeper APP Privacy Policy</h1>
+            <div class="subtitle">隐私政策</div>
         </div>
         
         <div class="content">
             <div class="update-date">
-                🔒 最后更新：2025年12月01日
+                🔒 Last Updated: December 01, 2025
             </div>
             
-            <p>康护APP是一款健康管理应用，用于记录血压、血糖、血脂和BMI数据，提供健康提醒、家庭成员管理、数据统计分析、OCR图片识别等功能。我们十分尊重您的个人信息和健康数据，并会尽全力保护您的信息安全。本隐私政策根据相关法律法规制定，明确说明我们如何收集、使用、存储和保护您的信息。</p>
+            <p>VitaKeeper APP is a health management application for recording blood pressure, blood sugar, blood lipids, and BMI data, providing health reminders, family member management, data statistical analysis, OCR image recognition, and other functions. We highly respect your personal information and health data and will do our utmost to protect your information security. This privacy policy is formulated in accordance with relevant laws and regulations to clearly explain how we collect, use, store, and protect your information.</p>
             
             <div class="section">
-                <h2><span class="icon">📊</span>一、收集信息的方式和范围</h2>
+                <h2><span class="icon">📊</span>I. Methods and Scope of Information Collection</h2>
         <ul>
-            <li><span class="highlight">1.1 健康数据收集</span>：在您使用康护APP记录血压、血糖、血脂和BMI等健康信息时，我们会收集相关数据用于健康分析、趋势提醒和报告生成。您可以随时在APP中查看、修改或删除自己的健康数据。</li>
-            <li><span class="highlight">1.2 基本设备信息</span>：为了提供更稳定和个性化的服务，我们可能会在您同意隐私政策后收集设备硬件信息（如设备型号、操作系统版本、设备序列号等），用于统计和优化服务体验。</li>
-            <li><span class="highlight">1.3 第三方服务使用</span>：部分功能可能依赖第三方服务来实现。只有在用户同意隐私政策后，相关服务才会运行。具体包括：
+            <li><span class="highlight">1.1 Health Data Collection</span>: When you use VitaKeeper APP to record health information such as blood pressure, blood sugar, blood lipids, and BMI, we will collect relevant data for health analysis, trend reminders, and report generation. You can view, modify, or delete your health data in the APP at any time.</li>
+            <li><span class="highlight">1.2 Basic Device Information</span>: To provide more stable and personalized services, we may collect device hardware information (such as device model, operating system version, device serial number, etc.) after you agree to the privacy policy for statistics and service experience optimization.</li>
+            <li><span class="highlight">1.3 Third-party Service Usage</span>: Some functions may rely on third-party services to implement. These services will only run after users agree to the privacy policy. Specifically include:
                 <ul>
-                    <li><strong>友盟统计服务</strong>：用于APP使用情况统计和性能优化。服务可能收集设备信息，但不会收集您的健康数据。</li>
-                    <li><strong>友盟推送服务</strong>：用于向您发送健康提醒和重要通知。</li>
-                    <li><strong>百度OCR服务</strong>：用于识别健康设备屏幕上的数据，提高数据录入效率。</li>
+                    <li><strong>Umeng Statistics Service</strong>: Used for APP usage statistics and performance optimization. The service may collect device information but will not collect your health data.</li>
+                    <li><strong>Umeng Push Service</strong>: Used to send you health reminders and important notifications.</li>
+                    <li><strong>Baidu OCR Service</strong>: Used to recognize data on health device screens to improve data entry efficiency.</li>
                 </ul>
             </li>
-            <li><span class="highlight">1.4 用户反馈与投诉</span>：您可以在APP“我的”页面中的“问题反馈”功能提交反馈或投诉，涉及个人信息或健康数据时，我们会严格按照隐私政策处理。</li>
+            <li><span class="highlight">1.4 User Feedback and Complaints</span>: You can submit feedback or complaints through the "Problem Feedback" function in the "My" page of the APP. When involving personal information or health data, we will strictly handle it according to the privacy policy.</li>
         </ul>
     </div>
 
             <div class="section">
-                <h2><span class="icon">💡</span>二、信息使用</h2>
+                <h2><span class="icon">🔐</span>II. Information Usage Purposes</h2>
                 <ul>
-                    <li>我们会使用收集的信息为您提供健康数据记录、趋势分析、提醒、报告生成等服务。</li>
-                    <li>设备信息和使用情况仅用于优化APP性能和改善用户体验，不会用于其他商业用途。</li>
+                    <li>Provide health data recording, analysis, and trend reminder services.</li>
+                    <li>Optimize product functions and user experience.</li>
+                    <li>Send important health reminders and notifications.</li>
+                    <li>Conduct product usage statistics to help improve service quality.</li>
+                    <li>Handle user feedback and technical support requests.</li>
                 </ul>
             </div>
 
             <div class="section">
-                <h2><span class="icon">🛡️</span>三、信息存储与保护</h2>
+                <h2><span class="icon">🛡️</span>III. Information Protection Measures</h2>
                 <ul>
-                    <li>健康数据会加密存储，并采取合理的技术措施防止未经授权的访问、泄露或篡改。</li>
-                    <li>我们承诺不向无关第三方出售、共享或泄露您的健康数据，除非法律法规要求或为保障用户安全。</li>
+                    <li>We use industry-standard encryption technology to protect your data transmission and storage security.</li>
+                    <li>Strictly limit employee access to personal information, only authorizing necessary personnel to handle relevant data.</li>
+                    <li>Regularly conduct security audits and vulnerability detection, and promptly fix security issues.</li>
+                    <li>We promise not to sell, share, or leak your health data to unrelated third parties, unless required by laws and regulations or to ensure user safety.</li>
                 </ul>
             </div>
 
             <div class="section">
-                <h2><span class="icon">⚖️</span>四、用户权利</h2>
+                <h2><span class="icon">⚖️</span>IV. User Rights</h2>
                 <ul>
-                    <li>您有权访问、修改或删除自己的健康数据。</li>
-                    <li>您可以选择退出部分数据收集或功能，但可能影响某些服务体验。</li>
-                    <li>在法律允许范围内，您可随时撤回对隐私政策的同意。</li>
+                    <li>You have the right to access, modify, or delete your health data.</li>
+                    <li>You can choose to opt out of some data collection or functions, but this may affect some service experiences.</li>
+                    <li>Within the scope permitted by law, you can withdraw your consent to the privacy policy at any time.</li>
                 </ul>
             </div>
 
             <div class="section">
-                <h2><span class="icon">🔄</span>五、政策更新</h2>
+                <h2><span class="icon">🔄</span>V. Policy Updates</h2>
                 <ul>
-                    <li>我们可能会根据法律法规及产品更新对本隐私政策进行修改，并在APP中公告更新版本。</li>
-                    <li>继续使用APP即表示您同意更新后的隐私政策。</li>
+                    <li>We may modify this privacy policy based on laws and regulations and product updates, and announce the updated version in the APP.</li>
+                    <li>Continued use of the APP indicates your agreement to the updated privacy policy.</li>
                 </ul>
             </div>
         </div>

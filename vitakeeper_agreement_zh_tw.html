@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康護APP用戶協議</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1E1F24; /* AppColors.textPrimary */
+            background: #F5F6F9; /* AppColors.pageBackground */
+            min-height: 100vh;
+            padding: 0; /* 外層Flutter已提供左右16與頂部9的間距 */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF; /* AppColors.white */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* AppColors.brandPrimary -> brandPrimaryDark */
+            color: #FFFFFF;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content { padding: 16px; }
+        
+        .update-date {
+            background: #F8FFF0; /* 品牌綠色的淺色背景 */
+            border-left: 4px solid #76E200; /* AppColors.brandPrimary */
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: #6E7183; /* AppColors.textSecondary */
+        }
+        
+        h2 {
+            color: #1E1F24; /* textPrimary */
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #76E200;
+            position: relative;
+        }
+        
+        h3 {
+            color: #1E1F24;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 16px 0 12px 0;
+            padding-left: 12px;
+            border-left: 3px solid #76E200;
+        }
+        
+        p {
+            font-size: 0.95rem;
+            color: #6E7183; /* textSecondary */
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            padding: 12px 12px;
+            background: #FAFBFC;
+            border-radius: 8px;
+            border-left: 3px solid #76E200;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        li:hover { background: #F3FCE8; }
+        
+        .section-title {
+            font-weight: 700;
+            color: #1E1F24;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .header { padding: 20px 16px; }
+            .header h1 { font-size: 1.3rem; }
+            .content { padding: 12px; }
+            h2 { font-size: 1.1rem; }
+            h3 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>康護APP用戶協議</h1>
+            <div class="subtitle">User Agreement</div>
+        </div>
+        
+        <div class="content">
+            <div class="update-date">
+                📅 最後更新：2025年12月01日
+            </div>
+
+            <p>歡迎使用「康護」APP（以下簡稱「本產品」）。在您使用本產品之前，請仔細閱讀以下用戶協議（以下簡稱「本協議」）。本協議適用於所有使用本產品的用戶，並由您與我們（以下簡稱「我們」或「公司」）之間達成。您在使用本產品時，即表示您已經閱讀、理解並同意本協議的所有條款。如果您不同意本協議的任何內容，請勿使用本產品。</p>
+
+            <h3>一、服務內容</h3>
+            <ul>
+                <li><span class="section-title">服務範圍：</span>公司提供本產品的下載安裝、使用、更新，包括但不限於：健康數據記錄（血壓、血糖、血脂、BMI等）、健康提醒和護理計劃管理、家庭成員健康檔案管理、健康數據統計分析和報告生成、OCR圖片識別功能、健康標準查詢等服務。具體服務內容可能會根據產品的更新而有所變化，用戶可隨時查看本協議的最新版本。</li>
+                <li><span class="section-title">服務中斷與終止：</span>公司有權隨時調整、暫停或終止部分或全部服務，且無需提前通知用戶。但公司應盡力在服務中斷或終止前告知用戶。</li>
+            </ul>
+
+            <h3>二、用戶行為規範</h3>
+            <ul>
+                <li><span class="section-title">合法使用：</span>用戶承諾僅將本產品用於合法目的，不得利用本產品從事任何違法、違規或損害他人權益的活動。</li>
+                <li><span class="section-title">數據真實性：</span>用戶應確保輸入的健康數據真實、準確，不得故意輸入虛假信息。虛假數據可能影響健康分析的準確性，甚至對用戶健康造成誤導。</li>
+                <li><span class="section-title">賬戶安全：</span>用戶有責任保護自己的賬戶安全，不得將賬戶信息泄露給他人。如發現賬戶被盜用，應立即聯繫我們。</li>
+                <li><span class="section-title">禁止行為：</span>用戶不得進行以下行為：逆向工程、破解、修改本產品；傳播病毒、惡意代碼；干擾本產品的正常運行；侵犯他人知識產權等。</li>
+            </ul>
+
+            <h3>三、隱私與信息安全</h3>
+            <ul>
+                <li><span class="section-title">隱私政策：</span>公司承諾尊重用戶的隱私權，保護用戶的個人信息和健康數據安全。具體的個人信息收集、使用和保護措施，請參閱公司的《隱私政策》。</li>
+                <li><span class="section-title">信息安全：</span>公司將採取合理的安全措施來保護用戶的個人信息和健康數據免受未經授權的訪問、使用或泄露。然而，用戶應了解，任何互聯網傳輸都無法做到百分百安全，公司無法保證絕對的安全性。</li>
+            </ul>
+
+            <h3>四、服務費用與支付</h3>
+            <ul>
+                <li><span class="section-title">費用說明：</span>本產品目前為免費使用，所有功能包括健康數據記錄、分析、提醒、家庭成員管理等均不收取費用。如未來推出付費功能，我們將提前通知用戶並更新本協議。</li>
+                <li><span class="section-title">第三方服務：</span>本產品可能使用第三方服務（如友盟統計、百度OCR等），這些服務的費用由我們承擔，不會向用戶收取額外費用。</li>
+            </ul>
+
+            <h3>五、免責聲明與責任限制</h3>
+            <ul>
+                <li><span class="section-title">健康信息提示：</span>本產品提供的血壓、血糖、血脂、BMI數據記錄及分析僅供參考，不作為醫療診斷或治療依據。用戶在使用本產品時應結合自身情況，必要時應諮詢專業醫療機構。</li>
+                <li><span class="section-title">產品質量：</span>公司不保證本產品的無缺陷、無錯誤或完全符合用戶的期望。對於因使用本產品產生的任何直接或間接損失，除非法律另有規定，公司不承擔任何責任。</li>
+                <li><span class="section-title">不可抗力：</span>由於自然災害、政府行為、戰爭、互聯網服務中斷等不可抗力事件造成的服務中斷或無法正常使用，公司不承擔責任。</li>
+            </ul>
+
+            <h3>六、協議的修改與更新</h3>
+            <ul>
+                <li><span class="section-title">協議修改：</span>公司有權隨時對本協議進行修改，並在本產品內公佈更新的協議內容。用戶應定期查看協議的最新版本。若用戶繼續使用本產品，視為接受修改後的協議。</li>
+                <li><span class="section-title">協議終止：</span>如果用戶違反本協議的任何條款，公司有權單方面終止本協議並停止提供服務。</li>
+            </ul>
+
+            <h3>七、法律適用與爭議解決</h3>
+            <ul>
+                <li><span class="section-title">法律適用：</span>本協議適用中華人民共和國法律。</li>
+                <li><span class="section-title">爭議解決：</span>若因本協議產生任何爭議，雙方應通過友好協商解決。協商不成時，任何一方可向公司所在地人民法院提起訴訟。</li>
+            </ul>
+
+            <h3>八、附則</h3>
+            <ul>
+                <li><span class="section-title">協議生效：</span>本協議自用戶點擊「同意」或開始使用本產品之日起生效。</li>
+                <li><span class="section-title">獨立條款：</span>本協議中的任何條款若被法院判定為無效或不可執行，其餘條款依然有效。</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaKeeper APP 이용약관</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1E1F24; /* AppColors.textPrimary */
+            background: #F5F6F9; /* AppColors.pageBackground */
+            min-height: 100vh;
+            padding: 0; /* Flutter가 좌우 16px, 상단 9px 패딩 제공 */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF; /* AppColors.white */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #76E200 0%, #5BB800 100%); /* AppColors.brandPrimary -> brandPrimaryDark */
+            color: #FFFFFF;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content { padding: 16px; }
+        
+        .update-date {
+            background: #F8FFF0; /* 브랜드 그린의 연한 배경 */
+            border-left: 4px solid #76E200; /* AppColors.brandPrimary */
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: #6E7183; /* AppColors.textSecondary */
+        }
+        
+        h2 {
+            color: #1E1F24; /* textPrimary */
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #76E200;
+            position: relative;
+        }
+        
+        h3 {
+            color: #1E1F24;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 16px 0 12px 0;
+            padding-left: 12px;
+            border-left: 3px solid #76E200;
+        }
+        
+        p {
+            font-size: 0.95rem;
+            color: #6E7183; /* textSecondary */
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            padding: 12px 12px;
+            background: #FAFBFC;
+            border-radius: 8px;
+            border-left: 3px solid #76E200;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        li:hover { background: #F3FCE8; }
+        
+        .section-title {
+            font-weight: 700;
+            color: #1E1F24;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .header { padding: 20px 16px; }
+            .header h1 { font-size: 1.3rem; }
+            .content { padding: 12px; }
+            h2 { font-size: 1.1rem; }
+            h3 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VitaKeeper APP 이용약관</h1>
+            <div class="subtitle">사용자 약관</div>
+        </div>
+        
+        <div class="content">
+            <div class="update-date">
+                📅 최종 업데이트: 2025년 12월 01일
+            </div>
+
+            <p>VitaKeeper APP(이하 "본 제품")을 이용해 주셔서 감사합니다. 본 제품을 이용하기 전에 다음 이용약관(이하 "본 약관")을 자세히 읽어 주시기 바랍니다. 본 약관은 본 제품을 이용하는 모든 사용자에게 적용되며, 귀하와 당사(이하 "당사") 간에 체결됩니다. 본 제품을 이용함으로써 귀하는 본 약관의 모든 조항을 읽고 이해하며 동의한 것으로 간주됩니다. 본 약관의 어느 내용에 동의하지 않으시는 경우, 본 제품을 이용하지 마시기 바랍니다.</p>
+
+            <h3>제1조 서비스 내용</h3>
+            <ul>
+                <li><span class="section-title">서비스 범위:</span> 당사는 본 제품의 다운로드, 설치, 이용, 업데이트를 제공하며, 이에 국한되지 않습니다: 건강 데이터 기록(혈압, 혈당, 혈중지질, BMI 등), 건강 알림 및 케어 플랜 관리, 가족 구성원 건강 기록 관리, 건강 데이터 통계 분석 및 보고서 생성, OCR 이미지 인식 기능, 건강 기준 조회 등의 서비스. 구체적인 서비스 내용은 제품 업데이트에 따라 변경될 수 있으며, 사용자는 언제든지 본 약관의 최신 버전을 확인할 수 있습니다.</li>
+                <li><span class="section-title">서비스 중단 및 종료:</span> 당사는 사용자에게 사전 통지 없이 언제든지 서비스의 일부 또는 전부를 조정, 중단 또는 종료할 권리가 있습니다. 단, 당사는 서비스 중단 또는 종료 전에 사용자에게 통지하도록 노력합니다.</li>
+            </ul>
+
+            <h3>제2조 사용자 행동 규범</h3>
+            <ul>
+                <li><span class="section-title">합법적 이용:</span> 사용자는 본 제품을 합법적인 목적으로만 이용할 것을 약속하며, 본 제품을 이용하여 불법적, 비준수적이거나 타인의 권리와 이익을 해치는 활동에 종사해서는 안 됩니다.</li>
+                <li><span class="section-title">데이터의 진실성:</span> 사용자는 입력하는 건강 데이터가 진실하고 정확하도록 보장해야 하며, 의도적으로 거짓 정보를 입력해서는 안 됩니다. 거짓 데이터는 건강 분석의 정확성에 영향을 미치며, 사용자의 건강에 오해를 불러일으킬 수 있습니다.</li>
+                <li><span class="section-title">계정 보안:</span> 사용자는 자신의 계정 보안을 보호할 책임이 있으며, 계정 정보를 타인에게 유출해서는 안 됩니다. 계정이 도용된 것을 발견한 경우 즉시 당사에 연락하시기 바랍니다.</li>
+                <li><span class="section-title">금지 행위:</span> 사용자는 다음 행위를 해서는 안 됩니다: 리버스 엔지니어링, 크래킹, 본 제품의 수정; 바이러스, 악성 코드의 확산; 본 제품의 정상적인 작동 방해; 타인의 지적재산권 침해 등.</li>
+            </ul>
+
+            <h3>제3조 개인정보 보호 및 정보 보안</h3>
+            <ul>
+                <li><span class="section-title">개인정보 처리방침:</span> 당사는 사용자의 개인정보 보호권을 존중하고 사용자의 개인정보와 건강 데이터의 보안을 보호할 것을 약속합니다. 구체적인 개인정보 수집, 이용, 보호 조치에 대해서는 당사의 "개인정보 처리방침"을 참조하시기 바랍니다.</li>
+                <li><span class="section-title">정보 보안:</span> 당사는 사용자의 개인정보와 건강 데이터를 무단 접근, 이용 또는 유출로부터 보호하기 위해 합리적인 보안 조치를 취합니다. 단, 사용자는 어떠한 인터넷 전송도 100% 안전할 수 없다는 점을 이해해야 하며, 당사는 절대적인 보안을 보장할 수 없습니다.</li>
+            </ul>
+
+            <h3>제4조 서비스 요금 및 결제</h3>
+            <ul>
+                <li><span class="section-title">요금 설명:</span> 본 제품은 현재 무료로 이용할 수 있으며, 건강 데이터 기록, 분석, 알림, 가족 구성원 관리 등 모든 기능에 요금이 부과되지 않습니다. 향후 유료 기능을 도입할 경우, 사전에 사용자에게 통지하고 본 약관을 업데이트하겠습니다.</li>
+                <li><span class="section-title">제3자 서비스:</span> 본 제품은 제3자 서비스(우멍 통계, 바이두 OCR 등)를 이용할 수 있으며, 이러한 서비스의 비용은 당사가 부담하며 사용자에게 추가 요금을 청구하지 않습니다.</li>
+            </ul>
+
+            <h3>제5조 면책 조항 및 책임 제한</h3>
+            <ul>
+                <li><span class="section-title">건강 정보 안내:</span> 본 제품이 제공하는 혈압, 혈당, 혈중지질, BMI 데이터 기록 및 분석은 참고용이며, 의료 진단 또는 치료의 근거가 되지 않습니다. 사용자는 본 제품을 이용할 때 자신의 상황을 고려하고, 필요시 전문 의료기관에 상담하시기 바랍니다.</li>
+                <li><span class="section-title">제품 품질:</span> 당사는 본 제품이 결함이 없고, 오류가 없으며, 사용자의 기대에 완전히 부응한다는 것을 보장하지 않습니다. 본 제품 이용으로 인해 발생하는 어떠한 직접적 또는 간접적 손실에 대해서도, 법률에 별도 규정이 있는 경우를 제외하고 당사는 일체의 책임을 지지 않습니다.</li>
+                <li><span class="section-title">불가항력:</span> 자연재해, 정부 행위, 전쟁, 인터넷 서비스 중단 등 불가항력 사유로 인한 서비스 중단 또는 정상 이용 불가에 대해서는 당사가 책임을 지지 않습니다.</li>
+            </ul>
+
+            <h3>제6조 약관의 변경 및 업데이트</h3>
+            <ul>
+                <li><span class="section-title">약관 변경:</span> 당사는 언제든지 본 약관을 변경하고 본 제품 내에서 업데이트된 약관 내용을 공개할 권리가 있습니다. 사용자는 정기적으로 약관의 최신 버전을 확인하시기 바랍니다. 사용자가 본 제품 이용을 계속하는 경우, 변경된 약관에 동의한 것으로 간주됩니다.</li>
+                <li><span class="section-title">약관 종료:</span> 사용자가 본 약관의 어느 조항을 위반한 경우, 당사는 일방적으로 본 약관을 종료하고 서비스 제공을 중단할 권리가 있습니다.</li>
+            </ul>
+
+            <h3>제7조 준거법 및 분쟁 해결</h3>
+            <ul>
+                <li><span class="section-title">준거법:</span> 본 약관은 중화인민공화국의 법률을 준거합니다.</li>
+                <li><span class="section-title">분쟁 해결:</span> 본 약관과 관련하여 분쟁이 발생한 경우, 당사자는 우호적인 협의를 통해 해결해야 합니다. 협의로 해결되지 않는 경우, 어느 당사자든 당사 소재지의 인민법원에 제소할 수 있습니다.</li>
+            </ul>
+
+            <h3>제8조 부칙</h3>
+            <ul>
+                <li><span class="section-title">약관 효력:</span> 본 약관은 사용자가 "동의"를 클릭한 날 또는 본 제품 이용을 시작한 날부터 효력을 발생합니다.</li>
+                <li><span class="section-title">독립 조항:</span> 본 약관의 어느 조항이 법원에 의해 무효 또는 집행 불가능으로 판정된 경우에도, 나머지 조항은 유효합니다.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
