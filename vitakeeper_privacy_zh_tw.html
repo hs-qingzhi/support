@@ -159,12 +159,15 @@
                 <h2><span class="icon">📊</span>一、收集信息的方式和範圍</h2>
         <ul>
             <li><span class="highlight">1.1 健康數據收集</span>：在您使用康護APP記錄血壓、血糖、血脂和BMI等健康信息時，我們會收集相關數據用於健康分析、趨勢提醒和報告生成。您可以隨時在APP中查看、修改或刪除自己的健康數據。</li>
-            <li><span class="highlight">1.2 基本設備信息</span>：為了提供更穩定和個性化的服務，我們可能會在您同意隱私政策後收集設備硬件信息（如設備型號、操作系統版本、設備序列號等），用於統計和優化服務體驗。</li>
+            <li><span class="highlight">1.2 基本設備信息</span>：為了提供更穩定和個性化的服務，我們可能會在您同意隱私政策後收集設備硬件信息（如設備型號、操作系統版本、設備序列號等）及網路資訊（如 IP 位址、網路類型），用於統計、安全風控和優化服務體驗。</li>
             <li><span class="highlight">1.3 第三方服務使用</span>：部分功能可能依賴第三方服務來實現。只有在用戶同意隱私政策後，相關服務才會運行。具體包括：
                 <ul>
-                    <li><strong>友盟統計服務</strong>：用於APP使用情況統計和性能優化。服務可能收集設備信息，但不會收集您的健康數據。</li>
+                    <li><strong>友盟統計服務</strong>：用於APP使用情況統計和性能優化。服務可能收集設備信息（設備型號、操作系統版本、網路類型、IP 位址），但不會收集您的健康數據。</li>
                     <li><strong>友盟推送服務</strong>：用於向您發送健康提醒和重要通知。</li>
                     <li><strong>百度OCR服務</strong>：用於識別健康設備屏幕上的數據，提高數據錄入效率。</li>
+                    <li><strong>Firebase（Google 提供）</strong>：包括 Firebase Cloud Messaging（推送通知）和 Firebase Remote Config（遠程配置）。可能收集設備識別信息、IP 位址和 App 安裝信息。</li>
+                    <li><strong>Google AdMob 廣告 SDK</strong>：在免費用戶開屏頁展示廣告。AdMob 可能收集廣告標識符（IDFA / IDFV）、IP 位址、設備信息和廣告互動數據。訂閱 Premium 用戶不會展示廣告。</li>
+                    <li><strong>App 內購買（Apple StoreKit / Google Play Billing）</strong>：用於處理訂閱與支付。交易由 Apple 或 Google 直接管理；我們僅接收訂閱狀態和到期時間，不接觸您的支付憑據。</li>
                 </ul>
             </li>
             <li><span class="highlight">1.4 用戶反饋與投訴</span>：您可以在APP「我的」頁面中的「問題反饋」功能提交反饋或投訴，涉及個人信息或健康數據時，我們會嚴格按照隱私政策處理。</li>
@@ -179,6 +182,7 @@
                     <li>發送重要的健康提醒和通知。</li>
                     <li>進行產品使用情況統計，幫助改進服務質量。</li>
                     <li>處理用戶反饋和技術支持請求。</li>
+                    <li><strong>PDF 健康報告：</strong>您可主動將健康記錄在裝置本地產生 PDF 檔案，並透過系統分享功能自主分享（如郵件、通訊軟體）。檔案僅在本地產生，應用程式不會將該檔案上傳至任何伺服器。</li>
                 </ul>
             </div>
 

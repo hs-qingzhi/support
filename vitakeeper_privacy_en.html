@@ -159,12 +159,15 @@
                 <h2><span class="icon">📊</span>I. Methods and Scope of Information Collection</h2>
         <ul>
             <li><span class="highlight">1.1 Health Data Collection</span>: When you use VitaKeeper APP to record health information such as blood pressure, blood sugar, blood lipids, and BMI, we will collect relevant data for health analysis, trend reminders, and report generation. You can view, modify, or delete your health data in the APP at any time.</li>
-            <li><span class="highlight">1.2 Basic Device Information</span>: To provide more stable and personalized services, we may collect device hardware information (such as device model, operating system version, device serial number, etc.) after you agree to the privacy policy for statistics and service experience optimization.</li>
+            <li><span class="highlight">1.2 Basic Device Information</span>: To provide more stable and personalized services, we may collect device hardware information (such as device model, operating system version, device serial number, etc.) and network information (such as IP address and network type) after you agree to the privacy policy for statistics, security risk control, and service experience optimization.</li>
             <li><span class="highlight">1.3 Third-party Service Usage</span>: Some functions may rely on third-party services to implement. These services will only run after users agree to the privacy policy. Specifically include:
                 <ul>
-                    <li><strong>Umeng Statistics Service</strong>: Used for APP usage statistics and performance optimization. The service may collect device information but will not collect your health data.</li>
+                    <li><strong>Umeng Statistics Service</strong>: Used for APP usage statistics and performance optimization. The service may collect device information (such as device model, operating system version, network type, and IP address) but will not collect your health data.</li>
                     <li><strong>Umeng Push Service</strong>: Used to send you health reminders and important notifications.</li>
                     <li><strong>Baidu OCR Service</strong>: Used to recognize data on health device screens to improve data entry efficiency.</li>
+                    <li><strong>Firebase (provided by Google)</strong>: Includes Firebase Cloud Messaging (push notifications) and Firebase Remote Config (remote configuration). May collect device identifiers, IP address, and app installation information.</li>
+                    <li><strong>Google AdMob Advertising SDK</strong>: Displays ads on the splash screen for free users. AdMob may collect advertising identifiers (IDFA / IDFV), IP address, device information, and ad interaction data. Premium subscribers will not see ads.</li>
+                    <li><strong>In-App Purchase (Apple StoreKit / Google Play Billing)</strong>: Used to process subscriptions and payments. Transactions are managed directly by Apple or Google; we only receive your subscription status and expiration date and do not access your payment credentials.</li>
                 </ul>
             </li>
             <li><span class="highlight">1.4 User Feedback and Complaints</span>: You can submit feedback or complaints through the "Problem Feedback" function in the "My" page of the APP. When involving personal information or health data, we will strictly handle it according to the privacy policy.</li>
@@ -179,6 +182,8 @@
                     <li>Send important health reminders and notifications.</li>
                     <li>Conduct product usage statistics to help improve service quality.</li>
                     <li>Handle user feedback and technical support requests.</li>
+                
+                    <li><strong>PDF Health Reports:</strong> You may generate PDF files of your health records locally on your device and share them yourself via the system share sheet (e.g., email or messaging apps). Files are generated locally only; the app never uploads them to any server.</li>
                 </ul>
             </div>
 

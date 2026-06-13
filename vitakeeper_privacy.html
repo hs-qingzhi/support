@@ -175,12 +175,16 @@
                 <h2><span class="icon">📊</span>一、收集信息的方式和范围</h2>
         <ul>
             <li><span class="highlight">1.1 健康数据收集</span>：在您使用康护APP记录血压、血糖、血脂和BMI等健康信息时，我们会收集相关数据用于健康分析、趋势提醒和报告生成。您可以随时在APP中查看、修改或删除自己的健康数据。</li>
-            <li><span class="highlight">1.2 基本设备信息</span>：为了提供更稳定和个性化的服务，我们可能会在您同意隐私政策后收集设备硬件信息（如设备型号、操作系统版本、设备序列号等），用于统计和优化服务体验。</li>
-            <li><span class="highlight">1.3 第三方服务使用</span>：部分功能可能依赖第三方服务来实现。只有在用户同意隐私政策后，相关服务才会运行。具体包括：
+            <li><span class="highlight">1.2 基本设备信息</span>：为了提供更稳定和个性化的服务，我们可能会在您同意隐私政策后收集设备硬件信息（如设备型号、操作系统版本、设备序列号等）及网络信息（如 IP 地址、网络类型），用于统计、安全风控和优化服务体验。</li>
+            <li><span class="highlight">1.3 第三方服务使用</span>：部分功能依赖第三方服务来实现。只有在您同意隐私政策后，相关服务才会运行。具体包括：
                 <ul>
-                    <li><strong>友盟统计服务</strong>：用于APP使用情况统计和性能优化。服务可能收集设备信息，但不会收集您的健康数据。</li>
-                    <li><strong>友盟推送服务</strong>：用于向您发送健康提醒和重要通知。</li>
-                    <li><strong>百度OCR服务</strong>：用于识别健康设备屏幕上的数据，提高数据录入效率。</li>
+                    <li><strong>友盟统计服务（Umeng）</strong>：用于 APP 使用情况统计、性能优化与崩溃监控。服务收集设备信息（设备型号、操作系统版本、网络类型、IP 地址）和事件数据（如功能使用、订阅转化、付费墙触达），但不会收集您的健康数据明细。</li>
+                    <li><strong>友盟推送服务（Umeng Push）</strong>：用于向您发送健康提醒和重要通知，使用 APNs/Push token 等设备识别信息。</li>
+                    <li><strong>百度 OCR 服务（Baidu Cloud OCR）</strong>：用于识别血压计、血糖仪等健康设备屏幕上的数据。<strong>当您使用拍照识别功能时，您拍摄的照片会上传至百度云服务器进行 OCR 处理</strong>，识别完成后图片不会保留在我们的服务器，但请避免在照片中包含与健康设备无关的敏感信息（如身份证、面部、银行卡等）。</li>
+                    <li><strong>Firebase（Google 提供）</strong>：包括 Firebase Cloud Messaging（推送通知）和 Firebase Remote Config（远程配置）。可能收集设备识别信息、IP 地址和 App 安装信息。</li>
+                    <li><strong>Google AdMob 广告 SDK</strong>（仅国际版/海外渠道）：在免费用户开屏页展示广告。AdMob 可能收集广告标识符（IDFA / IDFV）、IP 地址、设备信息和广告交互数据。订阅 Premium 用户不会展示广告。</li>
+                    <li><strong>字节跳动穿山甲（Pangle / GroMore 聚合）SDK</strong>（仅国内渠道）：在免费用户开屏页展示广告。可能收集网络信息（IP 地址）及设备标识信息（OAID 等；MAC/IMEI 已禁用，仅基础识别）。订阅 Premium 用户不会展示广告。</li>
+                    <li><strong>App 内购买（StoreKit）</strong>：通过 Apple 提供的 In-App Purchase 框架处理订阅与支付，由 Apple 直接管理交易；我们仅接收订阅状态和到期时间，不接触您的支付凭据。</li>
                 </ul>
             </li>
             <li><span class="highlight">1.4 用户反馈与投诉</span>：您可以在APP“我的”页面中的“问题反馈”功能提交反馈或投诉，涉及个人信息或健康数据时，我们会严格按照隐私政策处理。</li>
@@ -195,6 +199,7 @@
                     <li>向您发送重要健康提醒、服务通知与必要的运营消息。</li>
                     <li>开展产品使用情况统计与分析，以改进服务质量与可靠性。</li>
                     <li>处理用户反馈、问题定位与技术支持请求。</li>
+                    <li><strong>PDF 健康报告：</strong>您可主动将健康记录在设备本地生成 PDF 文件，并通过系统分享功能自主分享（如微信、邮件）。文件仅在本地生成，应用不会将该文件上传至任何服务器。</li>
                 </ul>
             </div>
 
