@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星大师 · 付费会员协议（含自动续费服务规则）</title>
+    <style>
+        :root {
+            --primary: #8B7CFF;
+            --primary-deep: #6E5BD8;
+            --bg: #F5F6F9;
+            --card: #FFFFFF;
+            --text: #2B2D3A;
+            --text-soft: #555a66;
+            --text-mute: #8A90A0;
+            --line: #ECEDF3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.75;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+        .header {
+            background: linear-gradient(135deg, #8B7CFF 0%, #6E5BD8 100%);
+            color: #fff;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+        .header .brand {
+            font-size: 15px;
+            letter-spacing: 4px;
+            opacity: .9;
+            margin-bottom: 14px;
+        }
+        .header h1 {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            display: inline-block;
+            font-size: 13px;
+            background: rgba(255, 255, 255, .18);
+            padding: 6px 16px;
+            border-radius: 999px;
+        }
+        .container {
+            max-width: 860px;
+            margin: -20px auto 60px;
+            padding: 0 16px;
+        }
+        .intro {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px 26px;
+            box-shadow: 0 6px 24px rgba(110, 91, 216, .08);
+            margin-bottom: 22px;
+        }
+        .intro p { margin: 0 0 12px; }
+        .intro p:last-child { margin-bottom: 0; }
+        .section {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 24px 26px 22px;
+            box-shadow: 0 6px 24px rgba(110, 91, 216, .06);
+            margin-bottom: 22px;
+        }
+        h2 {
+            color: var(--primary-deep);
+            font-size: 19px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            padding-left: 14px;
+            border-left: 4px solid var(--primary);
+            line-height: 1.4;
+        }
+        h3 {
+            color: var(--text);
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+        p {
+            color: var(--text-soft);
+            margin: 0 0 12px;
+        }
+        p:last-child { margin-bottom: 0; }
+        strong { color: var(--text); }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0 0 12px;
+        }
+        li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 10px;
+            color: var(--text-soft);
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        .callout {
+            background: #F3F1FF;
+            border: 1px solid #E3DEFF;
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 14px 0;
+        }
+        .callout p { color: #4a4470; }
+        .callout p:last-child { margin-bottom: 0; }
+        .ai-badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary-deep);
+            background: #EDEAFF;
+            border: 1px solid #D9D2FF;
+            border-radius: 6px;
+            padding: 2px 8px;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 6px;
+            font-size: 15px;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .price-table th, .price-table td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--line);
+        }
+        .price-table th {
+            background: #F3F1FF;
+            color: var(--primary-deep);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .price-table td { color: var(--text-soft); }
+        .price-table tr:last-child td { border-bottom: none; }
+        .note {
+            font-size: 13px;
+            color: var(--text-mute);
+            margin-top: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 8px 16px 0;
+            color: var(--text-mute);
+            font-size: 13px;
+            line-height: 1.9;
+        }
+        .footer strong { color: var(--text-soft); }
+        a { color: var(--primary-deep); text-decoration: none; }
+        @media (max-width: 600px) {
+            .header { padding: 38px 18px 34px; }
+            .header h1 { font-size: 21px; }
+            .container { padding: 0 12px; }
+            .intro, .section { padding: 20px 18px; border-radius: 14px; }
+            h2 { font-size: 17px; }
+            .price-table { font-size: 13px; }
+            .price-table th, .price-table td { padding: 10px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="brand">星 大 师</div>
+    <h1>付费会员协议<br>（含自动续费服务规则）</h1>
+    <div class="meta">最后更新 / 生效日期：2026年06月24日</div>
+</div>
+
+<div class="container">
+
+    <div class="intro">
+        <p>欢迎您使用「星大师」付费会员服务（以下简称“本服务”）。星大师是一款<strong>专业星盘 + AI 性格 / 情绪 / 关系 / 自我认知解读工具</strong>，所有解读内容<strong>仅供自我认知参考，不预判个人未来</strong>。本服务由<strong>衡水青智科技有限公司</strong>（以下简称“我们”或“运营者”）向您提供。</p>
+        <p>本服务为付费服务。为保障您的权益，请在使用本服务前完整、仔细地阅读本《星大师付费会员协议（含自动续费服务规则）》（以下简称“本协议”），特别是关于<strong>免费试用、自动续费、扣费时点与续费价格、取消方式</strong>等以加粗或下划线标示的条款。</p>
+        <p><strong>特别提示：</strong>如您选择带有自动续费的会员档位，请务必仔细阅读本协议<strong>“四、免费试用与自动续费服务”</strong>。订阅通过 <strong>Apple App Store（App 内购买 / In-App Purchase）</strong>完成，扣费、续费与试用资格判定均由 Apple 执行。您可随时在 Apple 账户设置中关闭自动续费。</p>
+        <p>当您点击“同意”“订阅”“确认支付”等按钮或开始使用本服务，即表示您已充分阅读、理解并接受本协议全部内容。如您不同意本协议或其中任何条款，请立即停止开通本服务。如您未满 18 周岁，请在法定监护人陪同下阅读并在其同意后使用本服务。</p>
+    </div>
+
+    <div class="section">
+        <h2>一、会员权益范围（免费功能永不阉割）</h2>
+        <p><strong>1.1</strong> 星大师坚持“算盘面免费、AI 深度解读付费”的原则。以下核心功能<strong>对所有用户永久免费</strong>，不因是否为会员而阉割：</p>
+        <ul>
+            <li><strong>专业星盘排盘</strong>：基于 Swiss Ephemeris 瑞士星历表计算的本命盘（行星落点、相位、宫位）完整排盘与展示。</li>
+            <li><strong>星盘档案</strong>：本命盘档案的本地创建、保存、查看、导出（JSON）与删除，永久免费，数据存于您的设备本地。</li>
+        </ul>
+        <p><strong>1.2</strong> 付费会员<strong>仅额外解锁“AI 深度解读”</strong>，即由 AI 大模型对您星盘落点生成的性格 / 情绪 / 关系 / 自我认知方向的文字解读。除解读次数与深度外，会员不绑定、不附加任何排盘或档案功能的限制。</p>
+        <p><strong>1.3</strong> 免费用户与会员的 AI 解读每日可用次数以服务页面展示为准（免费用户与会员的每日请求额度不同）。具体权益内容以本服务购买页面展示为准并可能不定期更新。</p>
+    </div>
+
+    <div class="section">
+        <h2>二、关于 AI 解读内容的特别说明</h2>
+        <p><span class="ai-badge">AI 生成</span>本服务的星盘解读内容<strong>由 AI 大模型自动生成</strong>，并在生成内容上带有 AI 生成标识。请您在使用前知悉以下事项：</p>
+        <ul>
+            <li><strong>所用模型</strong>：解读由「<strong>豆包 Doubao-Seed-2.0-lite</strong>」大模型生成，由<strong>火山方舟（火山引擎，服务器位于中国境内·北京）</strong>提供。</li>
+            <li><strong>数据如何被处理</strong>：为生成解读，我们会将由您的出生信息<strong>计算得到的星盘落点数据</strong>（行星位置、相位、宫位等结构化数据）发送至上述大模型服务进行委托处理（境内处理）。我们通过自有后端代理转发，App 内不存放大模型密钥。</li>
+            <li><strong>内容性质</strong>：AI 解读<strong>仅供自我认知参考</strong>，<strong>不预判个人未来，亦不构成任何医疗、心理诊断或治疗建议</strong>。请勿将其作为人生重大决策的唯一依据。</li>
+            <li><strong>内容审核</strong>：我们对输入与输出均设置合规过滤；AI 生成内容可能存在不准确之处，我们不对其绝对准确性作出保证。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>三、订阅档位、周期与价格</h2>
+        <p><strong>3.1</strong> 本服务通过 <strong>Apple App Store 应用内购买（IAP）</strong>提供，包含以下两档自动续费订阅：</p>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>订阅名称</th>
+                    <th>计费周期</th>
+                    <th>价格</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>星大师会员 · 连续包月</td>
+                    <td>每 1 个月</td>
+                    <td>以 App 内订阅页面展示价格为准</td>
+                </tr>
+                <tr>
+                    <td>星大师会员 · 连续包年</td>
+                    <td>每 1 年</td>
+                    <td>以 App 内订阅页面展示价格为准</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">实际价格、币种以您所在地区 Apple App Store 在订阅页面实时展示的金额为准。Apple 可能根据地区与汇率对价格进行展示与调整。</p>
+        <p><strong>3.2</strong> 上述两档订阅均为<strong>自动续费</strong>订阅。订阅成功后，会员权益（AI 深度解读）即时生效。</p>
+        <p><strong>3.3</strong> 全部款项均通过您的 <strong>Apple ID 账户以 Apple IAP 方式</strong>支付，我们不收取、不存储您的任何银行卡或支付账户信息。</p>
+    </div>
+
+    <div class="section">
+        <h2>四、免费试用与自动续费服务</h2>
+
+        <h3>4.1 7 天免费试用</h3>
+        <ul>
+            <li><strong>试用资格</strong>：符合资格的新用户可享受 <strong>7 天免费试用</strong>。试用资格由 Apple（StoreKit）判定，仅当您符合资格时，订阅页面才会显示免费试用选项；曾使用过试用或不符合 Apple 资格规则的用户可能无法再次享受。</li>
+            <li><strong>试用期内可随时取消、不扣费</strong>：在 7 天免费试用期间，您可<strong>随时取消</strong>。只要在试用期结束前至少 24 小时取消，<strong>不会产生任何费用</strong>。</li>
+            <li><strong>试用结束自动转为付费</strong>：若您在试用期结束前<strong>未取消</strong>，试用到期后将<strong>自动转为相应档位的付费订阅</strong>，并按该档位价格通过 Apple IAP 扣费、开始自动续费周期。</li>
+        </ul>
+
+        <h3>4.2 自动续费规则</h3>
+        <ul>
+            <li><strong>自动续费</strong>：订阅（或试用转正）后，除非您在<strong>当前订阅周期结束前至少 24 小时</strong>关闭自动续费，Apple 将按您所选周期自动续订并扣费。</li>
+            <li><strong>扣费时点</strong>：续费费用将在<strong>当前订阅周期到期前 24 小时内</strong>由 Apple 从您的 Apple ID 账户扣除（实际扣款时间可能因 Apple 系统而略有差异）。</li>
+            <li><strong>续费价格</strong>：续费按所选档位（包月 / 包年）在续费时 Apple 订阅页面所展示的对应价格扣取。若价格发生调整，Apple 将依其规则向您提示，并在必要时征得您的同意。</li>
+            <li><strong>扣费方</strong>：所有扣费均由 <strong>Apple</strong> 通过 App 内购买（IAP）执行，款项进入您的 Apple ID 绑定的支付方式。</li>
+        </ul>
+
+        <h3>4.3 如何取消自动续费</h3>
+        <p>您可随时在 <strong>Apple 账户设置</strong>中关闭自动续费，路径为：</p>
+        <div class="callout">
+            <p>打开 iPhone / iPad <strong>“设置”</strong> → 点击顶部您的 <strong>Apple ID（头像）</strong> → <strong>“订阅”</strong> → 选择 <strong>“星大师”</strong> → 点击 <strong>“取消订阅”</strong> 或关闭自动续费。</p>
+        </div>
+        <ul>
+            <li><strong>取消时点要求</strong>：请在<strong>当前订阅周期（或试用期）结束前至少 24 小时</strong>完成取消操作，否则本周期可能仍会被扣费并续期。</li>
+            <li><strong>取消不影响当期已购</strong>：取消自动续费<strong>不影响您已经购买的当前订阅周期</strong>，您仍可正常使用会员权益至当前周期到期为止，仅是到期后不再自动续费。</li>
+            <li><strong>退款</strong>：通过 Apple IAP 完成的购买，退款由 Apple 依据其《App Store 条款》处理；请通过 Apple 官方渠道（reportaproblem.apple.com）申请。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>五、关于您的数据</h2>
+        <p><strong>5.1</strong> 星大师采用“本地优先”的数据实践：</p>
+        <ul>
+            <li><strong>本地存储</strong>：您的星盘档案（含出生日期 / 时间 / 地点）、设备标识（32 位随机 UUID）、引导完成与同意状态等，均保存在您设备的本地应用目录中，您可随时导出或删除。</li>
+            <li><strong>后端处理</strong>：为提供 AI 解读与订阅服务，我们的后端会记录设备标识、平台类型、AI 请求审计日志（用于限流与风控）以及订阅状态（原始交易号、商品 ID、状态、到期时间）。</li>
+            <li><strong>订阅校验</strong>：为验证购买与试用资格，会通过 Apple App Store / StoreKit2 接收并校验收据、原始交易号、商品 ID、订阅状态与到期时间等（我们不接收您的 Apple 账户标识本身）。</li>
+            <li><strong>城市查询</strong>：出生城市经纬度通过 GeoNames 地名库在本地查询使用。</li>
+        </ul>
+        <p><strong>5.2</strong> 我们<strong>不</strong>集成任何第三方统计 / 广告 SDK，<strong>不</strong>做推送、行为追踪、设备指纹采集，<strong>不</strong>采集除出生城市外的位置信息，<strong>不</strong>存储任何支付卡信息。详细处理规则以《隐私政策》为准。</p>
+    </div>
+
+    <div class="section">
+        <h2>六、服务的中止、终止与变更</h2>
+        <ul>
+            <li>（1）您主动中止或终止，包括但不限于会员到期未续费、主动取消自动续费等；</li>
+            <li>（2）因国家或相关监管部门要求、或发生不可抗力事件时，我们可中止或终止服务；</li>
+            <li>（3）我们有权在法律允许范围内调整会员权益与费用，重大调整将提前以适当方式公告。变更后的价格仅适用于变更生效后的续费周期，不影响您当前已购周期。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>七、责任限制</h2>
+        <p><strong>7.1</strong> 您理解并同意，本服务按现有技术与条件所能达到的现状提供。我们将尽最大努力保障服务的连贯与安全，但不能预见和防范全部技术及其他风险，包括但不限于不可抗力、网络原因、第三方服务（如 Apple、大模型服务）瑕疵等可能导致的服务中断或不可用。</p>
+        <p><strong>7.2</strong> AI 解读内容仅供自我认知参考，您基于解读内容作出的任何判断与决定由您自行负责。</p>
+        <p><strong>7.3</strong> 基于收益与赔偿相一致及公平合理的原则，如因我们的原因造成本服务异常中断或不可用，您可能获得的最高赔偿额不超过本协议项下我们已实际向您收取的相关服务费用总额。</p>
+    </div>
+
+    <div class="section">
+        <h2>八、其他</h2>
+        <p><strong>8.1</strong> 本协议任一条款被视为废止、无效或不可执行的，不影响其余条款的有效性与可执行性。</p>
+        <p><strong>8.2</strong> 本协议的成立、生效、履行、解释及争议解决均适用中华人民共和国法律。</p>
+        <p><strong>8.3</strong> 本协议与其他服务协议及规则就同一事项有冲突的，以本协议约定为准；本协议未尽事宜，以其他服务协议及规则及双方另行达成的约定为准。</p>
+        <p><strong>8.4</strong> 如您对本协议或会员服务有任何疑问、意见或投诉，可通过下方联系方式与我们联系。</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>运营者：</strong>衡水青智科技有限公司</p>
+        <p><strong>联系邮箱：</strong>954964571@qq.com</p>
+        <p>最后更新 / 生效日期：2026年06月24日</p>
+    </div>
+
+</div>
+
+</body>
+</html>

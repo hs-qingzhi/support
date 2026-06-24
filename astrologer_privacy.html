@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星大师隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1E1F24;
+            background: #F5F6F9;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8B7CFF 0%, #6E5BD8 100%);
+            color: #FFFFFF;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="privacy-grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="white" opacity="0.1"/><circle cx="80" cy="80" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="5" r="0.5" fill="white" opacity="0.1"/><circle cx="5" cy="70" r="0.5" fill="white" opacity="0.1"/><circle cx="95" cy="30" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23privacy-grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content { padding: 16px; }
+
+        .update-date {
+            background: #F2F0FF;
+            border-left: 4px solid #8B7CFF;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+            font-weight: 600;
+            color: #6E7183;
+        }
+
+        h2 {
+            color: #1E1F24;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #8B7CFF;
+            position: relative;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #6E5BD8, #8B7CFF);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #6E7183;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .section {
+            margin-bottom: 16px;
+            background: #FAFBFC;
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 4px solid #8B7CFF;
+            transition: all 0.2s ease;
+        }
+
+        .section:hover { background: #F4F2FE; }
+
+        .section.ai-section {
+            background: #F4F2FE;
+            border-left: 4px solid #6E5BD8;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding: 12px 12px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            border-left: 3px solid #8B7CFF;
+            transition: all 0.2s ease;
+            position: relative;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        li:hover { background: #FFFFFF; }
+
+        .highlight {
+            font-weight: 700;
+            color: #1E1F24;
+            display: inline-block;
+            margin-right: 8px;
+            background: #F2F0FF;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        a { color: #6E5BD8; word-break: break-all; }
+
+        @media (max-width: 768px) {
+            .header { padding: 20px 16px; }
+            .header h1 { font-size: 1.3rem; }
+            .content { padding: 12px; }
+            .section { padding: 12px; }
+            h2 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>星大师隐私政策</h1>
+            <div class="subtitle">隐私政策</div>
+        </div>
+
+        <div class="content">
+            <div class="update-date">
+                🔒 最后更新 / 生效日期：2026年06月24日
+            </div>
+
+            <p>星大师是一款专业星盘 + AI 性格 / 情绪 / 关系 / 自我认知解读工具。我们依据您输入的出生信息计算星盘落点，并由 AI 大模型生成解读文本，<strong>仅供自我认知参考，不预判个人未来，亦不构成任何医疗或心理诊断建议</strong>。我们高度重视您的个人信息安全，并尽力予以保护。本隐私政策依据相关法律法规制定，明确说明我们如何收集、使用、存储和保护您的信息，并就「AI 生成内容与数据出境 / 委托处理」作专章说明。请您在使用前仔细阅读。</p>
+
+            <div class="section">
+                <h2><span class="icon">📊</span>一、收集信息的方式和范围</h2>
+                <ul>
+                    <li><span class="highlight">1.1 出生信息</span>：当您创建本命盘档案时，您主动填写的出生日期、出生时间、出生地点，用于在<strong>您的设备本地</strong>计算星盘落点（行星、相位、宫位）。出生时间未知时，应用不会输出上升 / 宫位，以保证准确性。这些信息及计算出的星盘档案默认仅保存在您的设备本地。</li>
+                    <li><span class="highlight">1.2 设备标识</span>：应用在您的设备本地生成并保存一个 32 位随机 UUID 作为设备标识（Device ID），用于区分调用来源与按设备进行用量限额，不含您的姓名、手机号等真实身份信息。</li>
+                    <li><span class="highlight">1.3 平台与版本信息</span>：为提供稳定服务，我们会获取您的平台类型（iOS / Android / 其他）等基础信息。</li>
+                    <li><span class="highlight">1.4 订阅与购买信息</span>：当您在 iOS 端开通会员订阅时，应用通过 Apple 内购框架（StoreKit2）处理交易。为校验订阅有效性，我们会接收 Apple 收据数据，并记录原始交易号（originalTxId）、商品标识（productId）、订阅状态与到期时间（expiresAt）。<strong>我们不接触您的 Apple 账户密码、银行卡号等支付凭据。</strong></li>
+                    <li><span class="highlight">1.5 网络访问信息</span>：当您使用需要联网的 AI 解读功能时，服务端会基于网络请求的来源 IP（通过 X-Forwarded-For 读取）对访问频率进行限流（每 IP 每分钟 30 次），<strong>该 IP 仅用于实时防滥用，不作长期留存</strong>。</li>
+                </ul>
+            </div>
+
+            <div class="section ai-section">
+                <h2><span class="icon">🤖</span>二、AI 生成内容与数据出境 / 委托处理（重要专章）</h2>
+                <p>本应用的星盘解读文本由 AI 大模型生成。为保障合规与透明，特就此作如下专项说明，请您重点阅读：</p>
+                <ul>
+                    <li><span class="highlight">2.1 解读由 AI 生成</span>：星盘解读内容<strong>由 AI 大模型自动生成</strong>，所用模型为「豆包 Doubao-Seed-2.0-lite」，由<strong>火山方舟（火山引擎，服务节点位于北京 · 中国境内）</strong>提供。星盘落点由本应用确定性计算得出，AI 仅负责对既有落点进行解读、不参与天文计算。</li>
+                    <li><span class="highlight">2.2 AI 标识与参考性质</span>：所有 AI 生成的解读文本均会带有显著的 <strong>AI 内容标识</strong>。该内容<strong>仅供自我认知参考，不预判个人未来，亦不构成任何医疗、心理诊断或治疗建议</strong>。请您理性看待，重要决策请咨询相应领域的专业人士。</li>
+                    <li><span class="highlight">2.3 委托处理与发送范围（境内）</span>：为生成解读，我们会将<strong>由您的出生信息计算得到的星盘落点数据（行星位置、相位、宫位等结构化 JSON）连同系统提示词</strong>发送至上述大模型服务进行处理，并接收返回的文本。该处理为我们对模型服务商的<strong>委托处理</strong>，数据处理节点位于<strong>中国境内（北京），不涉及数据出境</strong>。<strong>我们不会将您的姓名、出生地点的明文地址或其它直接身份信息发送给大模型。</strong></li>
+                    <li><span class="highlight">2.4 内容安全管控</span>：为保障内容合规，AI 生成内容会经过关键词黑名单过滤等安全校验后再向您展示。</li>
+                    <li><span class="highlight">2.5 调用记录</span>：为防滥用与限额，服务端会就 AI 请求记录一条审计日志（含设备标识、会员状态与请求文本长度等元信息），不留存解读正文与您的出生信息明细。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">💡</span>三、信息使用</h2>
+                <ul>
+                    <li>在您的设备本地计算并展示本命星盘（行星、相位、宫位）。</li>
+                    <li>将星盘落点数据发送至大模型以生成 AI 解读文本（详见第二章）。</li>
+                    <li>按设备标识进行 AI 解读用量限额（免费用户每日 3 次、会员每日 100 次，并设有每分钟请求上限）。</li>
+                    <li>校验与维护您的订阅状态、判定 7 天免费试用资格、识别会员权益。</li>
+                    <li>保障服务稳定与安全，包括按来源 IP 进行实时限流防滥用。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🛡️</span>四、信息存储与保护</h2>
+                <ul>
+                    <li><strong>本地优先：</strong>您的设备标识文件、本命盘档案（archives.json）、引导完成与同意标记（onboarding_done / consent_accepted）均保存在应用支持目录（getApplicationSupportDirectory）中，可跨重启持久保存。</li>
+                    <li><strong>档案可控：</strong>本命盘档案采用原子写入 + 备份 + 损坏自动恢复机制，支持以 JSON 格式<strong>导出</strong>，并支持由您随时<strong>删除</strong>。</li>
+                    <li><strong>服务端记录：</strong>服务端会就联网功能记录设备会话（设备标识 + 平台）、AI 请求审计元信息，以及订阅记录（原始交易号、商品标识、状态、到期时间）。</li>
+                    <li>我们采取合理、必要的技术与管理措施保护信息安全，但无法保证信息绝对安全。因不可抗力、第三方原因或用户自身原因导致的数据丢失、泄露或损坏，公司在法律允许范围内不承担赔偿责任。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🔐</span>五、权限与不收集声明</h2>
+                <p>我们仅申请实现功能所必需的权限：</p>
+                <ul>
+                    <li><strong>5.1 本地存储读写</strong>：用于读写设备标识与本命盘档案（应用专属目录内的本地 JSON），不申请系统相册 / 外部存储权限。</li>
+                    <li><strong>5.2 网络访问（HTTP）</strong>：用于调用 AI 解读等联网功能。</li>
+                    <li><strong>5.3 应用内购买（StoreKit2，仅 iOS）</strong>：用于会员订阅、收据校验与免费试用资格判定。</li>
+                    <li><strong>5.4 链接跳转（URL Launcher）</strong>：用于打开隐私政策、用户协议等法务链接。</li>
+                    <li><strong>5.5 我们明确不收集 / 不使用以下信息或能力：</strong>不接入任何统计分析 SDK；不接入任何广告 SDK；无推送通知；无崩溃上报；除您主动填写的出生城市外，不进行任何位置追踪；无行为追踪；无设备指纹；不存储任何支付卡信息。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">💳</span>六、订阅与自动续费说明</h2>
+                <ul>
+                    <li><span class="highlight">付费方式</span>：会员订阅仅通过 Apple 应用内购买（IAP）完成。免费排盘功能永不阉割，付费不绑定任何内容。</li>
+                    <li><span class="highlight">订阅档位与价格</span>：包月 ¥XX/月（com.qingzhi.astrologer.premium.monthly）、包年 ¥XX/年（com.qingzhi.astrologer.premium.yearly）。<strong>最终价格与计费周期以 App 内 Apple 实时展示的价格为准。</strong></li>
+                    <li><span class="highlight">免费试用</span>：符合资格的用户可享 7 天免费试用（基于 StoreKit2 资格接口判定，仅对符合条件者展示）。试用期结束后，若未在试用期内取消，将按所选订阅档位的价格自动转为付费订阅。</li>
+                    <li><span class="highlight">自动续费</span>：订阅默认自动续费，到期前 24 小时由 Apple 按所选档位价格扣费。您可随时在 iOS「设置 → Apple ID → 订阅」中管理或取消，取消后于当前周期结束时生效。订阅状态变更通过 Apple 服务器通知（webhook）同步至我们的服务端。</li>
+                    <li><span class="highlight">退款说明</span>：订阅成功后，<strong>当期已支付的费用不可退还</strong>；如需退款，请依据 Apple《App Store 退款政策》直接向 Apple 申请，由 Apple 按其规则处理。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">⚖️</span>七、用户权利</h2>
+                <ul>
+                    <li>您有权访问、导出（JSON）或删除自己的本命盘档案。</li>
+                    <li>您可随时停止使用联网的 AI 解读功能，仅使用本地排盘。</li>
+                    <li>您可在系统设置中管理订阅，并随时撤回对本隐私政策的同意（撤回后部分功能可能无法使用）。</li>
+                    <li>对于服务端为限流与订阅校验而留存的设备会话标识、订阅记录与 AI 请求审计元信息，您可通过第十一章的联系邮箱申请查询或删除（法律法规要求留存的除外）。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🧩</span>八、第三方服务声明</h2>
+                <p>本应用仅依赖以下第三方服务，且各自仅处理实现对应功能所必需的最小数据：</p>
+                <ul>
+                    <li><strong>Apple App Store / StoreKit2</strong>：用于应用内购买、收据校验与免费试用资格判定。涉及 Apple ID、收据、交易号、商品标识、订阅状态与到期时间，由 Apple 直接管理交易。</li>
+                    <li><strong>火山方舟（火山引擎）大模型服务</strong>：用于生成 AI 星盘解读（详见第二章）。处理范围为系统提示词 + 星盘落点 JSON（行星 / 相位 / 宫位）→ 返回文本，节点位于中国境内（北京）。</li>
+                    <li><strong>GeoNames 地名库</strong>：用于出生地点的城市检索，涉及城市名称与坐标，数据在本地消费。</li>
+                    <li>第三方服务的数据处理规则以其各自隐私政策为准；因第三方服务导致的争议由该第三方承担相应责任，公司在法律允许范围内不承担连带责任。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🗄️</span>九、数据保留</h2>
+                <ul>
+                    <li>本命盘档案等核心数据存储于您的设备本地，由您自行掌握，删除应用或在应用内删除档案即清除相应数据。</li>
+                    <li>服务端的设备会话、AI 请求审计元信息与订阅记录，将基于实现目的所必需的最短期限保存，超期进行删除或匿名化处理，法律另有规定的除外。</li>
+                    <li>用于实时限流的来源 IP 不作长期留存。</li>
+                    <li>建议您定期通过导出功能自行备份档案；因未备份或设备问题导致的数据丢失，公司在法律允许范围内不承担赔偿责任。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🔄</span>十、政策更新</h2>
+                <ul>
+                    <li>我们可能根据法律法规及产品更新对本隐私政策进行修改，并在应用内公告更新版本。我们将尽合理努力通知，但无需逐一取得同意。</li>
+                    <li>继续使用本应用即表示您同意更新后的隐私政策。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🏢</span>十一、开发者信息与联系方式</h2>
+                <ul>
+                    <li><span class="highlight">开发者（运营者）</span>：衡水青智科技有限公司</li>
+                    <li><span class="highlight">联系邮箱</span>：954964571@qq.com</li>
+                    <li>如您对本隐私政策或个人信息的处理有任何疑问、意见或投诉，可通过上述邮箱与我们联系，我们将在收到后尽快核实并处理。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星大师用户协议</title>
+    <style>
+        :root {
+            --primary: #8B7CFF;
+            --primary-deep: #6E5BD8;
+            --bg: #F5F6F9;
+            --card: #FFFFFF;
+            --text: #2C2A3A;
+            --text-soft: #555068;
+            --text-mute: #8A8699;
+            --line: #ECEAF6;
+            --accent-bg: #F3F1FE;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.75;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+        }
+        header {
+            background: linear-gradient(135deg, #8B7CFF 0%, #6E5BD8 100%);
+            color: #fff;
+            text-align: center;
+            padding: 56px 20px 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -40px;
+            width: 220px;
+            height: 220px;
+            background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 70%);
+            pointer-events: none;
+        }
+        header .brand {
+            font-size: 15px;
+            letter-spacing: 4px;
+            opacity: 0.92;
+            margin-bottom: 12px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header .meta {
+            margin-top: 16px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 860px;
+            margin: -28px auto 48px;
+            padding: 0 18px;
+            position: relative;
+        }
+        .intro {
+            background-color: var(--card);
+            border-radius: 16px;
+            padding: 26px 28px;
+            box-shadow: 0 8px 28px rgba(110, 91, 216, 0.10);
+            margin-bottom: 22px;
+        }
+        .intro p {
+            margin: 0;
+            font-size: 15px;
+            color: var(--text-soft);
+        }
+        section.card {
+            background-color: var(--card);
+            border-radius: 16px;
+            padding: 26px 28px;
+            box-shadow: 0 6px 22px rgba(44, 42, 58, 0.06);
+            margin-bottom: 18px;
+        }
+        section.card h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0 0 16px;
+            padding-left: 14px;
+            border-left: 4px solid var(--primary);
+            line-height: 1.4;
+        }
+        section.card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-deep);
+            margin: 20px 0 8px;
+        }
+        p {
+            font-size: 15px;
+            color: var(--text-soft);
+            margin: 0 0 12px;
+        }
+        ul, ol {
+            font-size: 15px;
+            color: var(--text-soft);
+            margin: 0 0 12px;
+            padding-left: 22px;
+        }
+        li { margin-bottom: 9px; }
+        .section-title { font-weight: 600; color: var(--text); }
+        strong { color: var(--text); }
+        .callout {
+            background-color: var(--accent-bg);
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 16px 0;
+            border-left: 3px solid var(--primary);
+            font-size: 14.5px;
+            color: var(--text-soft);
+        }
+        .callout strong { color: var(--primary-deep); }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 14px;
+        }
+        .data-table th, .data-table td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--line);
+            color: var(--text-soft);
+            vertical-align: top;
+        }
+        .data-table th {
+            background-color: var(--accent-bg);
+            color: var(--primary-deep);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .data-table tr:last-child td { border-bottom: none; }
+        .contact-box {
+            background: linear-gradient(135deg, #F3F1FE 0%, #ECEAFB 100%);
+            border-radius: 12px;
+            padding: 18px 20px;
+            font-size: 15px;
+            color: var(--text-soft);
+        }
+        .contact-box .row { margin-bottom: 6px; }
+        .contact-box .row:last-child { margin-bottom: 0; }
+        .contact-box b { color: var(--primary-deep); }
+        footer {
+            text-align: center;
+            padding: 28px 20px 40px;
+            color: var(--text-mute);
+            font-size: 13px;
+        }
+        a { color: var(--primary-deep); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            header { padding: 44px 18px 40px; }
+            header h1 { font-size: 26px; }
+            .container { padding: 0 12px; }
+            .intro, section.card { padding: 20px 18px; border-radius: 14px; }
+            section.card h2 { font-size: 17px; }
+            .data-table { font-size: 13px; }
+            .data-table th, .data-table td { padding: 8px 9px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">星 大 师</div>
+        <h1>用户协议</h1>
+        <div class="meta">最后更新 / 生效日期：2026年06月24日</div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>欢迎使用「星大师」App（以下简称"本应用"或"本产品"）。本应用是一款专业星盘排盘 + AI 性格 / 情绪 / 关系 / 自我认知解读工具，由 <strong>衡水青智科技有限公司</strong>（以下简称"我们"或"运营者"）开发并运营。在您使用本应用之前，请您务必仔细阅读并充分理解本《用户协议》（以下简称"本协议"）全部内容，<strong>尤其是关于免责、责任限制、AI 生成内容、费用与订阅等以加粗或下划线标注的条款</strong>。本协议同时构成 Apple App Store 所要求的最终用户许可协议（EULA）与服务条款。当您下载、安装、注册、登录或以任何方式使用本应用时，即视为您已阅读、理解并同意接受本协议的全部约束。如您不同意本协议任何内容，请立即停止使用本应用。</p>
+        </div>
+
+        <section class="card">
+            <h2>一、服务内容与定位</h2>
+            <ul>
+                <li><span class="section-title">产品定位：</span>本应用是一款<strong>专业星盘排盘 + AI 性格 / 情绪 / 关系 / 自我认知解读工具</strong>。本应用所提供的全部内容<strong>仅供自我认知与娱乐参考</strong>，不对未来作出任何推断，不针对任何具体事件、健康状况或人生决策提供结论。</li>
+                <li><span class="section-title">基本功能：</span>我们基于您填写的出生信息，使用 Swiss Ephemeris 天文星历算法计算行星落点、相位与宫位等星盘数据，并据此为您提供星盘图展示、星盘档案管理（本地保存、导出、删除），以及由 AI 大模型生成的性格、情绪、关系与自我认知方向的文字解读。</li>
+                <li><span class="section-title">服务变更：</span>具体功能可能随版本更新而调整。我们有权根据运营需要增加、修改、暂停或终止部分或全部服务。如发生重大调整，我们将以应用内公告等合理方式予以提示。</li>
+                <li><span class="section-title">服务中断：</span>因系统维护、升级、网络故障或不可抗力等原因导致服务暂时中断的，我们将尽合理努力及时恢复，但不对由此造成的不便承担责任。</li>
+            </ul>
+            <div class="callout">
+                <strong>重要声明：</strong>本应用不提供、不暗示亦不替代任何形式的未来推断或人生决策建议。星盘解读是一种基于天文位置的性格与心理倾向参考视角，不具有任何科学推断效力，不应作为您做出任何重大决定的依据。
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>二、用户行为规范</h2>
+            <ul>
+                <li><span class="section-title">合法使用：</span>您应遵守中华人民共和国法律法规及本协议约定，合法、善意地使用本应用。禁止利用本应用从事任何违法违规、侵害他人合法权益或危害公共利益的活动。</li>
+                <li><span class="section-title">真实信息：</span>为获得准确的星盘计算，您填写的出生日期、时间与地点应尽量真实准确。如信息有误，将影响星盘计算与解读结果的参考价值，相关后果由您自行承担。</li>
+                <li><span class="section-title">账户与设备：</span>本应用通过设备本地生成的随机标识来区分会话与提供服务，您应妥善使用本应用，不得通过技术手段伪造、滥用标识或恶意绕过使用频率限制。</li>
+                <li><span class="section-title">禁止滥用 AI 功能：</span>您不得诱导、操纵 AI 解读功能生成违法、违规或不当内容，不得将本应用输出的内容用于违法目的、误导他人或对外宣称其具有未来推断或诊断效力。</li>
+                <li><span class="section-title">系统安全：</span>您不得对本应用进行反向工程、反编译、破解，不得干扰、攻击我们的服务器或网络，不得未经授权抓取、爬取或批量调用本应用接口。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>三、知识产权</h2>
+            <ul>
+                <li><span class="section-title">应用权利：</span>本应用及其包含的软件代码、界面设计、星盘图形、解读结构化底座、文案、商标、标识等，除依法属于第三方的部分外，其知识产权均归我们或相应权利人所有，受著作权法及相关法律保护。</li>
+                <li><span class="section-title">使用授权：</span>在您遵守本协议的前提下，我们授予您一项有限的、不可转让、不可转授权、可撤销的个人非商业使用许可。未经我们书面许可，您不得复制、修改、分发、出租、转让、反向工程或以其他方式商业利用本应用的任何部分。</li>
+                <li><span class="section-title">第三方资料：</span>本应用所采用的天文星历数据来源于 Swiss Ephemeris，城市地理坐标数据来源于 GeoNames。相关数据的知识产权归各自权利人所有，本应用在授权或开源许可范围内使用。</li>
+                <li><span class="section-title">您的内容：</span>您填写的出生信息及由此生成的星盘档案归您所有。您理解并同意，为向您提供解读服务，我们可在本协议及《隐私政策》约定范围内对相关数据进行必要的计算与处理。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>四、AI 生成内容声明与免责（重要）</h2>
+            <p>本应用的星盘解读内容由<strong>人工智能大模型自动生成</strong>。为保障您的知情权并符合相关法律法规，特作如下声明，请您务必仔细阅读：</p>
+            <ul>
+                <li><span class="section-title">生成方式与模型：</span>解读文本由 AI 大模型生成，所使用的大模型为<strong>「豆包 Doubao-Seed-2.0-lite」（火山方舟 / 北京·境内）</strong>。</li>
+                <li><span class="section-title">AI 内容标识：</span>本应用生成的解读内容均带有<strong>显式与隐式的 AI 生成内容标识</strong>，以便您识别其为人工智能生成。</li>
+                <li><span class="section-title">仅供参考：</span>AI 生成的解读内容<strong>仅供自我认知与娱乐参考，不对未来作出任何推断，亦不构成任何医疗、心理、健康、投资、法律或其他专业领域的诊断、建议或承诺</strong>。如您有相关需求，请咨询具备资质的专业人士或机构。</li>
+                <li><span class="section-title">数据委托处理：</span>为生成解读内容，本应用会将<strong>根据您的出生信息计算得到的星盘落点数据（行星位置、相位、宫位等）</strong>发送至上述大模型服务进行处理。该处理为我们委托的境内服务，处理完成后返回文本结果。此过程不发送您的出生原始明文之外的额外个人身份信息。</li>
+                <li><span class="section-title">内容局限性：</span>AI 生成内容可能存在不准确、不完整或不符合您实际情况的情形。我们已对输入、生成过程及输出结果设置合规过滤与安全机制，但不对 AI 生成内容的绝对准确性、适用性作出保证。您应对其作出独立判断，不应将其作为任何决策依据。</li>
+            </ul>
+            <div class="callout">
+                <strong>请记住：</strong>星盘解读描述的是性格倾向、情绪状态、关系模式与自我认知方向，<strong>不是对您未来的推断，也不针对任何具体事件下结论</strong>。请理性看待，独立思考。
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>五、隐私指引与数据实践</h2>
+            <p>我们高度重视并依法保护您的个人信息。关于个人信息的收集、使用、存储与保护的完整说明，请以本应用内的《隐私政策》为准。以下为本协议项下的关键数据实践要点：</p>
+            <h3>5.1 我们收集 / 处理的信息</h3>
+            <table class="data-table">
+                <tr>
+                    <th>信息类型</th>
+                    <th>用途</th>
+                    <th>存储位置</th>
+                </tr>
+                <tr>
+                    <td>设备标识（本地生成的 32 位随机 UUID）</td>
+                    <td>区分会话、提供服务、使用频率限制</td>
+                    <td>本地 + 后端会话记录</td>
+                </tr>
+                <tr>
+                    <td>出生日期 / 时间 / 地点</td>
+                    <td>星盘排盘计算</td>
+                    <td>本地存储（星盘档案）</td>
+                </tr>
+                <tr>
+                    <td>平台类型（iOS / Android 等）</td>
+                    <td>适配服务与会话记录</td>
+                    <td>本地 + 后端会话记录</td>
+                </tr>
+                <tr>
+                    <td>星盘落点数据（行星 / 相位 / 宫位）</td>
+                    <td>发送至大模型生成解读</td>
+                    <td>委托处理（境内，不长期留存原文）</td>
+                </tr>
+                <tr>
+                    <td>Apple 购买凭证 / 交易信息</td>
+                    <td>订阅校验、免费试用资格判断</td>
+                    <td>后端订阅记录</td>
+                </tr>
+            </table>
+            <h3>5.2 本地优先存储</h3>
+            <p>您的星盘档案数据<strong>以本地存储为主</strong>，保存在设备的应用支持目录中，支持您随时<strong>导出（JSON）与删除</strong>。设备标识、引导与同意状态等同样保存在本地。</p>
+            <h3>5.3 我们不收集的信息</h3>
+            <p>为最大程度保护您的隐私，本应用<strong>不集成任何第三方统计分析 SDK、不集成广告 SDK、不推送通知、不收集崩溃日志、不进行行为追踪或设备指纹识别、不在出生城市之外进行位置追踪、不存储任何银行卡支付信息</strong>。</p>
+            <h3>5.4 第三方服务</h3>
+            <table class="data-table">
+                <tr>
+                    <th>服务方</th>
+                    <th>用途</th>
+                    <th>涉及数据</th>
+                </tr>
+                <tr>
+                    <td>Apple App Store / StoreKit 2</td>
+                    <td>应用内购买、凭证校验、试用资格</td>
+                    <td>Apple ID、购买凭证、交易号、订阅状态</td>
+                </tr>
+                <tr>
+                    <td>火山方舟（字节跳动）大模型 API</td>
+                    <td>AI 星盘解读生成</td>
+                    <td>星盘落点 JSON → 解读文本</td>
+                </tr>
+                <tr>
+                    <td>GeoNames 地名库</td>
+                    <td>出生城市检索与坐标匹配</td>
+                    <td>城市名称、经纬度（本地使用）</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>六、费用与支付</h2>
+            <ul>
+                <li><span class="section-title">免费功能：</span>本应用的核心排盘功能<strong>永久免费</strong>，不会因您未付费而被阉割。免费用户每日可使用一定次数的 AI 解读（如每日 3 次）。</li>
+                <li><span class="section-title">会员订阅：</span>本应用提供可选的会员订阅服务，以解锁更高频次的 AI 解读等权益。订阅档位包括<strong>连续包月</strong>与<strong>连续包年</strong>两种。</li>
+                <li><span class="section-title">免费试用：</span>符合资格的用户可享有<strong>7 天免费试用</strong>。试用资格由 Apple StoreKit 判定，仅在您符合条件时显示。试用期结束后若未取消，将按所选订阅档位自动续费。</li>
+                <li><span class="section-title">支付方式：</span>会员订阅<strong>仅通过 Apple 应用内购买（IAP）</strong>完成。具体价格以应用内及 App Store 实时展示为准。</li>
+                <li><span class="section-title">自动续费：</span>订阅为自动续费产品。在当前订阅周期结束前 24 小时内，Apple 将自动从您的 Apple 账户扣费以续订下一周期，费用与周期与原订阅一致。</li>
+                <li><span class="section-title">管理与取消：</span>您可随时在设备「设置 → Apple 账户 → 订阅」中管理或关闭自动续费。取消将在当前已付费周期结束后生效。已支付的当前周期费用，除 Apple 政策另有规定外，一般不予退还。</li>
+                <li><span class="section-title">退款：</span>因订阅经由 Apple 平台完成，退款申请须依据 Apple App Store 的退款政策，通过 Apple 渠道办理。</li>
+            </ul>
+            <div class="callout">
+                我们承诺：<strong>付费不绑定任何"测算"类或宿命论内容，仅提供性格 / 情绪 / 关系 / 自我认知方向的解读</strong>，免费排盘功能永不阉割，绝不进行诱导消费或弹窗轰炸。
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>七、免责声明与责任限制</h2>
+            <ul>
+                <li><span class="section-title">参考性质：</span>您理解并同意，本应用提供的星盘数据与 AI 解读<strong>仅供自我认知与娱乐参考，不对未来作出任何推断，亦不构成专业建议</strong>。您基于本应用内容作出的任何判断或决定，由您自行负责。</li>
+                <li><span class="section-title">不构成专业意见：</span>本应用内容不构成医疗、心理、健康、投资、法律、婚恋等任何专业领域的诊断或建议。如您存在相关方面的困扰或需求，请及时寻求具备资质的专业人士或机构的帮助。</li>
+                <li><span class="section-title">计算与生成局限：</span>尽管我们采用专业天文星历算法并对 AI 输出设置合规过滤，但不保证应用完全无缺陷、无中断或结果完全符合您的期望。在法律允许的最大范围内，对因使用或无法使用本应用造成的间接、附带或后果性损失，我们不承担责任。</li>
+                <li><span class="section-title">第三方服务：</span>因 Apple、火山方舟大模型服务或其他第三方服务自身原因导致的服务异常、延迟或数据问题，我们将协助处理，但不对第三方服务承担直接责任。</li>
+                <li><span class="section-title">不可抗力：</span>对于因自然灾害、政府行为、网络中断、电信故障等不可抗力或非我们可合理控制的原因造成的服务中断或损失，我们不承担责任。</li>
+                <li><span class="section-title">责任上限：</span>在适用法律允许的范围内，我们就本协议项下对您承担的全部责任，累计不超过您在引发责任的事件发生前十二个月内就本应用向我们实际支付的费用总额。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>八、协议的修改</h2>
+            <ul>
+                <li><span class="section-title">修改权利：</span>我们有权根据法律法规变化或业务调整对本协议进行修订，并通过应用内公告、更新协议页面等合理方式予以公示。</li>
+                <li><span class="section-title">生效与接受：</span>修订后的协议自公布之日起生效。若您在协议变更后继续使用本应用，即视为您已知悉并同意修订后的协议。如您不同意，应停止使用本应用。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>九、法律适用与争议解决</h2>
+            <ul>
+                <li><span class="section-title">法律适用：</span>本协议的订立、效力、解释、履行及争议解决，均适用中华人民共和国大陆地区法律（不含冲突法规则）。</li>
+                <li><span class="section-title">争议解决：</span>因本协议引起或与本协议相关的任何争议，双方应首先友好协商解决；协商不成的，任何一方均可向运营者住所地有管辖权的人民法院提起诉讼。</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>十、附则</h2>
+            <ul>
+                <li><span class="section-title">协议生效：</span>本协议自您点击同意、勾选确认或开始使用本应用之日起生效。</li>
+                <li><span class="section-title">可分割性：</span>本协议任何条款若被有管辖权的法院认定为无效或不可执行，不影响其余条款的效力，其余条款仍应继续有效。</li>
+                <li><span class="section-title">完整协议：</span>本协议与应用内《隐私政策》共同构成您与我们之间就本应用使用所达成的完整协议。</li>
+                <li><span class="section-title">联系我们：</span>如您对本协议或本应用有任何疑问、意见或投诉，可通过以下方式与我们联系。</li>
+            </ul>
+            <div class="contact-box">
+                <div class="row"><b>运营者：</b>衡水青智科技有限公司</div>
+                <div class="row"><b>联系邮箱：</b>954964571@qq.com</div>
+                <div class="row"><b>应用名称：</b>星大师</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        © 2026 衡水青智科技有限公司 · 星大师 ｜ 最后更新：2026年06月24日
+    </footer>
+</body>
+</html>
