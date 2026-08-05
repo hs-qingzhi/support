@@ -150,10 +150,14 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 최종 업데이트: 2025년 12월 01일
+                🔒 최종 업데이트: 2026년 08월 03일
             </div>
-            
+
             <p>VitaKeeper APP은 혈압, 혈당, 혈중지질, BMI 데이터 기록, 건강 알림, 가족 구성원 관리, 데이터 통계 분석, OCR 이미지 인식 등의 기능을 제공하는 건강 관리 애플리케이션입니다. 우리는 귀하의 개인정보와 건강 데이터를 매우 중요하게 여기며, 귀하의 정보 보안을 최대한 보호하겠습니다. 본 개인정보 처리방침은 관련 법률 규정에 따라 수립되었으며, 우리가 어떻게 귀하의 정보를 수집, 이용, 저장, 보호하는지 명확히 설명합니다.</p>
+
+            <p><strong>귀하가 본 개인정보 처리방침을 읽고 "동의하고 계속"을 누르기 전에는, 당사 및 본 방침에 명시된 어떠한 제3자 SDK도 귀하의 개인정보를 수집하지 않고, 시스템 권한을 요청하지 않으며, 기기 식별자를 읽지 않습니다.</strong> 통계·푸시·광고·오류 모니터링 등 모든 제3자 서비스는 귀하의 동의 이후에만 초기화됩니다.</p>
+
+            <p>귀하가 만 14세 미만 아동이거나 아동의 보호자인 경우, <strong>「미성년자 개인정보 보호 규칙」</strong>도 함께 읽어 주시기 바랍니다: <a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a></p>
             
             <div class="section">
                 <h2><span class="icon">📊</span>제1조 정보 수집 방법 및 범위</h2>
@@ -163,14 +167,28 @@
             <li><span class="highlight">1.3 제3자 서비스 이용</span>：일부 기능은 제3자 서비스에 의존하여 구현될 수 있습니다. 이러한 서비스는 사용자가 개인정보 처리방침에 동의한 후에만 실행됩니다. 구체적으로는 다음이 포함됩니다:
                 <ul>
                     <li><strong>우멍 통계 서비스</strong>：APP 이용 상황 통계 및 성능 최적화에 사용됩니다. 서비스는 기기 정보(기기 모델, 운영체제 버전, 네트워크 유형, IP 주소 등)를 수집할 수 있지만, 귀하의 건강 데이터는 수집하지 않습니다.</li>
-                    <li><strong>우멍 푸시 서비스</strong>：귀하에게 건강 알림 및 중요한 통지를 보내기 위해 사용됩니다.</li>
+                    <li><strong>우멍 푸시 서비스</strong>：귀하에게 건강 알림 및 중요한 통지를 보내기 위해 사용되며, APNs／Push token 등 기기 식별 정보를 이용합니다.</li>
+                    <li><strong>알리바바 클라우드 ACCS 메시지 채널</strong>（패키지명 <code>com.taobao.accs</code>, 위 우멍 푸시 SDK에 내장）：푸시 상시 연결을 유지하여 건강 알림이 제때 도달하도록 합니다. 연결 가능 여부 판단 및 접속 지점 선택을 위해 <strong>네트워크 상태 정보</strong>（연결 상태, 네트워크 유형(Wi-Fi／이동통신), 로밍 여부）및 <strong>IP 주소</strong>를 읽습니다. 건강 데이터는 수집하지 않습니다.</li>
+                    <li><strong>Google 모바일 서비스(GMS, Google 제공)</strong>(<strong>위와 동일, iOS 판과 Google Play 판에서만 활성화</strong>)：Firebase 푸시 및 Google AdMob 광고의 기본 실행 환경을 제공합니다. <strong>설치된 앱 정보</strong>（서비스 가용성 판단을 위해 Google Play 스토어 구성요소 <code>com.android.vending</code>의 버전만 조회）및 기기 식별 정보를 읽습니다. <strong>본 서비스는 귀하가 본 개인정보 처리방침에 동의한 후에만 시작됩니다.</strong></li>
+                    <li><strong>MSA SDK</strong>（패키지명 <code>com.bun.miitmdid</code>, 중국 본토 채널 전용）：광고 SDK의 의존 모듈로 포함되며, IMEI 등 변경 불가능한 하드웨어 식별자를 대체하는 <strong>익명 기기 식별자 OAID／VAID／AAID</strong>를 취득하여 광고 기여 분석 및 부정 방지에 사용합니다. 해당 식별자는 시스템 설정에서 재설정할 수 있습니다.</li>
                     <li><strong>바이두 OCR 서비스</strong>：건강 기기 화면의 데이터를 인식하여 데이터 입력 효율성을 높이기 위해 사용됩니다.</li>
-                    <li><strong>Firebase(Google 제공)</strong>：Firebase Cloud Messaging(푸시 알림) 및 Firebase Remote Config(원격 구성)를 포함합니다. 기기 식별 정보, IP 주소, 앱 설치 정보를 수집할 수 있습니다.</li>
+                    <li><strong>Firebase(Google 제공)</strong>(<strong>iOS 판과 Google Play 판에서만 활성화. 화웨이·아너·샤오미·OPPO·vivo·응용보 등 중국 본토 Android 채널 판에서는 비활성화</strong>)：Firebase Cloud Messaging(푸시 알림) 및 Firebase Remote Config(원격 구성)를 포함합니다. 기기 식별 정보, IP 주소, 앱 설치 정보를 수집할 수 있습니다. <strong>본 서비스는 중국 본토 역외에서 처리되며, "1.5 개인정보의 국외 이전"을 참조하십시오.</strong></li>
                     <li><strong>Google AdMob 광고 SDK</strong>：무료 사용자의 시작 화면에 광고를 표시합니다. AdMob은 광고 식별자(IDFA / IDFV), IP 주소, 기기 정보 및 광고 상호작용 데이터를 수집할 수 있습니다. Premium 구독 사용자에게는 광고가 표시되지 않습니다.</li>
                     <li><strong>인앱 결제(Apple StoreKit / Google Play Billing)</strong>：구독 및 결제 처리를 위해 사용됩니다. 거래는 Apple 또는 Google이 직접 관리하며, 당사는 구독 상태와 만료일만 수신하고 귀하의 결제 정보에는 접근하지 않습니다.</li>
                 </ul>
             </li>
             <li><span class="highlight">1.4 사용자 피드백 및 불만</span>：귀하는 APP의 "내 정보" 페이지의 "문제 피드백" 기능을 통해 피드백이나 불만을 제출할 수 있으며, 개인정보나 건강 데이터와 관련된 경우 개인정보 처리방침에 따라 엄격히 처리합니다.</li>
+            <li><span class="highlight">1.5 개인정보의 국외 이전</span>
+                <ul>
+                    <li><strong>적용 범위</strong>：국외 이전은 <strong>iOS 판과 Google Play 판에서만</strong> 발생합니다. 화웨이·아너·샤오미·OPPO·vivo·응용보·360·바이두·완또우지아 등 <strong>중국 본토 Android 채널 판은 Google 서비스를 활성화하지 않으며 어떠한 개인정보도 국외로 이전하지 않습니다</strong>.</li>
+                    <li><strong>국외 수신자</strong>：Google LLC(설립지: 미국 캘리포니아주).</li>
+                    <li><strong>연락처</strong>：<a href="https://support.google.com/policies">https://support.google.com/policies</a>; 개인정보 처리방침 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                    <li><strong>목적</strong>：푸시 알림 발송(Firebase Cloud Messaging), 버전 업데이트 등 원격 구성 취득(Firebase Remote Config), 광고 게재 및 정산(Google AdMob, 무료 사용자 한정).</li>
+                    <li><strong>방법</strong>：Google이 국외 서버에서 수신·처리합니다.</li>
+                    <li><strong>정보 종류</strong>：기기 식별 정보, IP 주소, 앱 설치 정보, 광고 식별자(IDFA / IDFV). <strong>귀하의 건강 데이터, 구성원 정보, 휴대전화 번호는 포함되지 않습니다.</strong></li>
+                    <li><strong>귀하의 권리</strong>：시스템 설정에서 알림 권한을 끄거나, Premium을 구독(광고 미표시)하거나, 앱을 삭제하여 위 국외 이전을 철회할 수 있습니다. 1558406139@qq.com 으로 중단을 요청하실 수도 있습니다.</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -198,11 +216,47 @@
             </div>
 
             <div class="section">
-                <h2><span class="icon">⚖️</span>제4조 사용자 권리</h2>
+                <h2><span class="icon">⚖️</span>제4조 귀하의 권리와 행사 방법</h2>
+                <p>아래 각 권리는 APP 내에 대응하는 진입점이 있습니다. 행사 시 <strong>고객센터 연락, 비용, 신분증이나 신분증을 든 사진 등 추가 자료가 일절 필요하지 않습니다</strong>.</p>
                 <ul>
-                    <li>귀하는 자신의 건강 데이터에 접근, 수정, 삭제할 권리가 있습니다.</li>
-                    <li>일부 데이터 수집이나 기능에서 선택적으로 제외할 수 있지만, 일부 서비스 경험에 영향을 줄 수 있습니다.</li>
-                    <li>법률에서 허용하는 범위 내에서 언제든지 개인정보 처리방침에 대한 동의를 철회할 수 있습니다.</li>
+                    <li><span class="highlight">4.1 열람 및 정정</span>
+                        <ul>
+                            <li><strong>건강 데이터</strong>："홈" 또는 각 기록 목록에서 혈압·혈당·혈중지질·BMI 기록을 눌러 열람하고 수정할 수 있습니다.</li>
+                            <li><strong>구성원 정보</strong>（이름·성별·생년월일·프로필 사진）："내 정보 → 구성원 관리 → 해당 구성원 선택".</li>
+                            <li><strong>계정 정보</strong>（휴대전화 번호·가입일·사용자 ID）："내 정보 → 계정 관리".</li>
+                            <li><strong>데이터 사본</strong>："내 정보 → 계정 관리 → 데이터 관리 → 데이터 내보내기".</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.2 삭제</span>
+                        <ul>
+                            <li><strong>개별 건강 기록</strong>：해당 기록을 열고 우측 상단 "삭제"를 누르면 <strong>즉시 적용</strong>됩니다.</li>
+                            <li><strong>구성원 및 전체 기록</strong>："내 정보 → 구성원 관리 → 구성원 삭제", <strong>즉시 적용</strong>됩니다.</li>
+                            <li><strong>클라우드 백업 데이터</strong>："내 정보 → 계정 관리 → 데이터 관리 → 클라우드 백업 → 클라우드 데이터 삭제". 서버의 백업본은 영구 삭제되며 기기 내 데이터는 영향을 받지 않습니다.</li>
+                            <li><strong>피드백 내용 및 이미지</strong>："내 정보 → 기타 → 피드백 → 내 피드백".</li>
+                            <li>위 경로로 삭제가 어려운 경우 <strong>1558406139@qq.com</strong> 으로 연락 주시면 <strong>15 영업일 이내</strong>에 확인 후 처리해 드립니다.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.3 계정 탈퇴</span>
+                        <ul>
+                            <li><strong>경로</strong>："내 정보 → 상단 계정 카드 선택 → 계정 관리 → 계정 삭제".</li>
+                            <li><strong>유일한 조건</strong>：타인의 악의적 탈퇴를 막기 위해 <strong>해당 계정에 등록된 휴대전화 번호와 SMS 인증번호를 통한 본인 확인</strong>만 요구합니다. 그 밖의 조건은 일절 두지 않습니다.</li>
+                            <li><strong>처리 결과</strong>：인증 후 계정은 <strong>즉시 탈퇴</strong> 처리되고 자동 로그아웃됩니다. 계정 정보, 클라우드에 백업된 건강 데이터, 구독 연동 기록은 <strong>서버에서도 함께 삭제 또는 익명화</strong>되며 보관되지 않고, 계정은 복구할 수 없습니다. 시스템 장애로 서버 처리가 완료되지 않은 경우 <strong>15 영업일 이내</strong>에 확인 및 삭제를 완료합니다.</li>
+                            <li>탈퇴 전 "데이터 내보내기"로 백업해 주십시오. 탈퇴 후에는 복구할 수 없습니다.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.4 동의 철회</span>
+                        <ul>
+                            <li><strong>본 방침 전체에 대한 동의 철회</strong>：앱 삭제 시 철회로 간주합니다. 또는 <strong>1558406139@qq.com</strong> 으로 철회 의사를 알려 주시면 <strong>15 영업일 이내</strong>에 해당 처리를 중단합니다.</li>
+                            <li><strong>카메라 권한</strong>：기기 "설정 → 앱 → 康護 → 권한 → 카메라 → 끄기". 꺼도 수동 입력은 가능합니다.</li>
+                            <li><strong>알림 권한</strong>：기기 "설정 → 앱 → 康護 → 알림 → 끄기", 또는 "내 정보 → 건강 알림"에서 알림 끄기.</li>
+                            <li><strong>클라우드 저장 동의</strong>："내 정보 → 계정 관리 → 데이터 관리 → 클라우드 백업 → 스위치 끄기". 이후 업로드되지 않으며 건강 데이터는 기기에만 저장됩니다. 이미 업로드된 사본까지 지우려면 같은 화면의 "클라우드 데이터 삭제"를 이용하십시오.</li>
+                            <li><strong>맞춤 광고</strong>：Premium 구독 시 광고가 전혀 표시되지 않습니다. 기기 "설정 → 개인정보 보호 → 광고"에서 광고 식별자를 재설정하거나 끌 수도 있습니다.</li>
+                            <li>철회는 철회 이전에 동의를 근거로 이루어진 처리의 효력에 영향을 주지 않습니다. 개별 권한을 철회하면 해당 기능을 사용할 수 없게 되지만, APP의 기본인 기기 내 건강 기록 기능에는 영향이 없습니다.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.5 응답 기한</span>：APP 내에서 직접 수행할 수 있는 정정·삭제·탈퇴 요청은 <strong>즉시 적용</strong>됩니다. 수동 처리가 필요한 요청（이메일로 접수된 삭제·탈퇴·동의 철회·사본 요청 포함）은 <strong>접수일로부터 15 영업일 이내</strong>에 확인·처리 및 회신할 것을 약속합니다.</li>
+                    <li><span class="highlight">4.6 불만 제기</span>：당사의 개인정보 처리로 권리가 침해되었다고 판단되시면 "내 정보 → 기타 → 피드백" 또는 <strong>1558406139@qq.com</strong> 으로 제기해 주십시오. <strong>15 영업일 이내</strong>에 회신합니다. 회신에 만족하지 못하시는 경우 관할 감독기관에 신고하거나 관할 법원에 소를 제기할 수 있습니다.</li>
+                    <li><span class="highlight">4.7 미성년자</span>：만 14세 미만 아동에 대해서는 별도의 처리 규칙을 두고 있습니다. <strong>「미성년자 개인정보 보호 규칙」</strong>을 참조하십시오: <a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a>（"내 정보 → 기타 → 미성년자 개인정보 처리방침"에서도 확인할 수 있습니다）.</li>
                 </ul>
             </div>
 
@@ -232,14 +286,14 @@
             </div>
             <div class="section">
                 <h2><span class="icon">💬</span>제8조 피드백 기능의 정보 처리</h2>
-                <p>앱 내 "문제 피드백" 기능을 이용하실 때, 당사는 귀하의 피드백을 접수·처리하고 귀하와 소통하며 제품을 개선하기 위한 목적으로만 다음 정보를 수집·처리합니다:</p>
+                <p>앱 내 "의견 피드백"을 사용하실 때, 당사는 귀하의 피드백을 접수·처리하고 귀하와 소통하며 제품을 개선하기 위한 목적으로만 다음 정보를 수집·처리합니다:</p>
                 <ul>
-                    <li><span class="highlight">8.1 귀하가 직접 제공하는 정보</span>: 피드백 내용, 이미지, 연락처(선택 사항). 연락처는 암호화하여 저장합니다.</li>
-                    <li><span class="highlight">8.2 문제 진단을 돕기 위해 자동으로 첨부되는 정보</span>: 앱 버전, OS 버전, 기기 모델, 언어, 멤버십 상태, 현재 화면 및 익명 기기 식별자(이름·전화번호 등 실제 신원 정보는 포함하지 않습니다). 또한 제출 시점의 접속 IP가 기록되나, 이는 오용·악용 방지 및 보안 목적으로만 사용하며 장기간 보관하지 않습니다.</li>
-                    <li><span class="highlight">8.3 저장 및 제3자 처리</span>: 데이터는 Alibaba Cloud(중국 본토, 베이징)에 저장됩니다. 이미지는 Alibaba Cloud Object Storage(OSS)에 업로드되며, 부적합 콘텐츠를 차단하기 위해 Alibaba Cloud의 DashScope 비전 모델을 통한 자동 심사를 거칩니다. 이 이미지 심사는 당사가 Alibaba Cloud에 위탁하여 처리합니다.</li>
-                    <li><span class="highlight">8.4 보존 기간</span>: 이미지는 기본적으로 12개월 후 자동 삭제되며, 텍스트 피드백은 문의가 해결된 후 12개월간 보관된 뒤 자동으로 삭제됩니다.</li>
-                    <li><span class="highlight">8.5 귀하의 권리</span>: "내 피드백" 목록에서 귀하의 모든 피드백(이미지 포함)을 삭제할 수 있습니다. 요청 시 기록은 즉시 삭제되고, 이미지도 그 후 삭제됩니다.</li>
-                    <li><span class="highlight">8.6 비공개 원칙</span>: 본 채널은 귀하와 개발자 간의 비공개 지원 문의 창구이며, 그 내용은 다른 사용자에게 공개되지 않습니다.</li>
+                    <li><span class="highlight">8.1 귀하가 자발적으로 제공하는 정보</span>: 피드백 내용, 이미지, 연락처(선택). 연락처는 암호화하여 저장합니다.</li>
+                    <li><span class="highlight">8.2 문제 진단을 위해 자동으로 첨부되는 정보</span>: 앱 버전, OS 버전, 기기 모델, 언어, 멤버십 상태, 현재 페이지 및 익명 기기 식별자(이름·전화번호 등 실제 신원은 포함하지 않음). 제출 시 접속 IP도 기록되나 오·남용 방지 및 보안 목적으로만 사용하며 장기 보관하지 않습니다.</li>
+                    <li><span class="highlight">8.3 저장 및 제3자</span>: 데이터는 Alibaba Cloud(중국 본토, 베이징)에 저장됩니다. 이미지는 Alibaba Cloud Object Storage(OSS)에 업로드되며, 위반 콘텐츠를 차단하기 위해 Alibaba Cloud의 DashScope 비전 모델로 기계 심사를 거칩니다. 이 이미지 심사는 당사가 Alibaba Cloud에 위탁한 처리입니다.</li>
+                    <li><span class="highlight">8.4 보존 기간</span>: 이미지는 기본적으로 12개월 후 자동 삭제되며, 텍스트 피드백은 티켓 해결 후 12개월간 보관된 뒤 자동으로 삭제됩니다.</li>
+                    <li><span class="highlight">8.5 귀하의 권리</span>: "내 피드백"에서 귀하의 모든 피드백(이미지 포함)을 삭제할 수 있으며, 요청 즉시 기록이 제거되고 이미지도 이후 삭제됩니다.</li>
+                    <li><span class="highlight">8.6 비공개</span>: 본 채널은 귀하와 개발자 간의 비공개 지원 티켓이며, 그 내용은 다른 사용자에게 공개되지 않습니다.</li>
                 </ul>
             </div>
         </div>

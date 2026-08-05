@@ -150,10 +150,14 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 Last Updated: December 01, 2025
+                🔒 Last Updated: August 03, 2026
             </div>
-            
+
             <p>VitaKeeper APP is a health management application for recording blood pressure, blood sugar, blood lipids, and BMI data, providing health reminders, family member management, data statistical analysis, OCR image recognition, and other functions. We highly respect your personal information and health data and will do our utmost to protect your information security. This privacy policy is formulated in accordance with relevant laws and regulations to clearly explain how we collect, use, store, and protect your information.</p>
+
+            <p><strong>Before you have read this privacy policy and tapped "Agree and Continue", neither we nor any third-party SDK listed in this policy collects any of your personal information, requests any system permission, or reads any device identifier.</strong> All third-party services — analytics, push, advertising and crash monitoring — are initialised only after you consent.</p>
+
+            <p>If you are a child under 14, or the parent/guardian of one, please also read the <strong>Minors' Personal Information Protection Rules</strong>: <a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a></p>
             
             <div class="section">
                 <h2><span class="icon">📊</span>I. Methods and Scope of Information Collection</h2>
@@ -163,14 +167,28 @@
             <li><span class="highlight">1.3 Third-party Service Usage</span>: Some functions may rely on third-party services to implement. These services will only run after users agree to the privacy policy. Specifically include:
                 <ul>
                     <li><strong>Umeng Statistics Service</strong>: Used for APP usage statistics and performance optimization. The service may collect device information (such as device model, operating system version, network type, and IP address) but will not collect your health data.</li>
-                    <li><strong>Umeng Push Service</strong>: Used to send you health reminders and important notifications.</li>
+                    <li><strong>Umeng Push Service</strong>: Used to send you health reminders and important notifications, using APNs / push token device identifiers.</li>
+                    <li><strong>Alibaba Cloud ACCS message channel</strong> (package <code>com.taobao.accs</code>, embedded inside the Umeng Push SDK above): maintains the persistent push connection so health reminders arrive on time. To evaluate connectivity and select an access point it reads <strong>network state</strong> (connection status, network type such as Wi-Fi / cellular, roaming flag) and the <strong>IP address</strong>. It does not collect your health data.</li>
+                    <li><strong>Google Mobile Services (GMS, provided by Google)</strong> (<strong>as above, enabled only in the iOS and Google Play builds</strong>): provides the runtime foundation for Firebase Cloud Messaging and Google AdMob. It reads <strong>installed-application information</strong> (only querying the version of the Google Play Store component <code>com.android.vending</code> to determine service availability) and device identifiers. <strong>It is started only after you agree to this privacy policy.</strong></li>
+                    <li><strong>MSA SDK</strong> (package <code>com.bun.miitmdid</code>, mainland China distribution channels only): required by the advertising SDK to obtain the <strong>anonymous device identifiers OAID / VAID / AAID</strong> in place of immutable hardware identifiers such as IMEI, for ad attribution and anti-fraud. You can reset this identifier in your system settings.</li>
                     <li><strong>Baidu OCR Service</strong>: Used to recognize data on health device screens to improve data entry efficiency.</li>
-                    <li><strong>Firebase (provided by Google)</strong>: Includes Firebase Cloud Messaging (push notifications) and Firebase Remote Config (remote configuration). May collect device identifiers, IP address, and app installation information.</li>
+                    <li><strong>Firebase (provided by Google)</strong> (<strong>enabled only in the iOS and Google Play builds; not enabled in the Huawei, Honor, Xiaomi, OPPO, vivo, Tencent MyApp and other mainland-China Android channel builds</strong>): Includes Firebase Cloud Messaging (push notifications) and Firebase Remote Config (remote configuration). May collect device identifiers, IP address, and app installation information. <strong>This service is operated outside mainland China; see "1.5 Cross-border transfer of personal information".</strong></li>
                     <li><strong>Google AdMob Advertising SDK</strong>: Displays ads on the splash screen for free users. AdMob may collect advertising identifiers (IDFA / IDFV), IP address, device information, and ad interaction data. Premium subscribers will not see ads.</li>
                     <li><strong>In-App Purchase (Apple StoreKit / Google Play Billing)</strong>: Used to process subscriptions and payments. Transactions are managed directly by Apple or Google; we only receive your subscription status and expiration date and do not access your payment credentials.</li>
                 </ul>
             </li>
             <li><span class="highlight">1.4 User Feedback and Complaints</span>: You can submit feedback or complaints through the "Problem Feedback" function in the "My" page of the APP. When involving personal information or health data, we will strictly handle it according to the privacy policy.</li>
+            <li><span class="highlight">1.5 Cross-border transfer of personal information</span>
+                <ul>
+                    <li><strong>Scope</strong>: cross-border transfer occurs <strong>only in the iOS and Google Play builds</strong>. The Huawei, Honor, Xiaomi, OPPO, vivo, Tencent MyApp, 360, Baidu and Wandoujia <strong>mainland-China Android channel builds do not enable Google services and transfer no personal information outside mainland China</strong>.</li>
+                    <li><strong>Overseas recipient</strong>: Google LLC (incorporated in California, USA).</li>
+                    <li><strong>Contact</strong>: <a href="https://support.google.com/policies">https://support.google.com/policies</a>; privacy policy <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                    <li><strong>Purpose</strong>: delivering push notifications (Firebase Cloud Messaging), retrieving remote configuration such as version updates (Firebase Remote Config), and serving and reconciling ads (Google AdMob, free users only).</li>
+                    <li><strong>Means</strong>: received and processed by Google on its servers outside mainland China.</li>
+                    <li><strong>Categories</strong>: device identifiers, IP address, app installation information, advertising identifiers (IDFA / IDFV). <strong>Your health data, member profiles and phone number are not included.</strong></li>
+                    <li><strong>Your rights</strong>: you may withdraw from the above transfer by turning off notification permission in system settings, subscribing to Premium (no ads shown), or uninstalling the app; you may also email 1558406139@qq.com to ask us to stop.</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -200,11 +218,47 @@
             </div>
 
             <div class="section">
-                <h2><span class="icon">⚖️</span>IV. User Rights</h2>
+                <h2><span class="icon">⚖️</span>IV. Your Rights and How to Exercise Them</h2>
+                <p>Every right below has a matching entry point inside the app. Exercising them is <strong>free, requires no contact with support, and requires no ID documents, selfies holding ID, or other extra material</strong>.</p>
                 <ul>
-                    <li>You have the right to access, modify, or delete your health data.</li>
-                    <li>You can choose to opt out of some data collection or functions, but this may affect some service experiences.</li>
-                    <li>Within the scope permitted by law, you can withdraw your consent to the privacy policy at any time.</li>
+                    <li><span class="highlight">4.1 Access and correction</span>
+                        <ul>
+                            <li><strong>Health data</strong>: tap any blood pressure, blood glucose, blood lipid or BMI record on the home screen or in a record list to view and edit it.</li>
+                            <li><strong>Member profile</strong> (name, gender, date of birth, avatar): "Profile → Member Management → tap the member".</li>
+                            <li><strong>Account details</strong> (mobile number, registration date, user ID): "Profile → Account".</li>
+                            <li><strong>Copy of your data</strong>: "Profile → Account → Data Management → Export Data".</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.2 Deletion</span>
+                        <ul>
+                            <li><strong>A single record</strong>: open the record and tap "Delete" in the top-right corner. <strong>Takes effect immediately.</strong></li>
+                            <li><strong>A member and all their records</strong>: "Profile → Member Management → Delete Member". <strong>Takes effect immediately.</strong></li>
+                            <li><strong>Cloud backup data</strong>: "Profile → Account → Data Management → Cloud Backup → Delete Cloud Data". The backed-up copy on our servers is permanently erased; on-device data is unaffected.</li>
+                            <li><strong>Feedback and images</strong>: "Profile → Other → Feedback → My Feedback".</li>
+                            <li>If any of these entry points does not work for you, email <strong>1558406139@qq.com</strong> and we will verify and complete the deletion <strong>within 15 working days</strong>.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.3 Closing your account</span>
+                        <ul>
+                            <li><strong>Where</strong>: "Profile → tap the account card at the top → Account → Delete Account".</li>
+                            <li><strong>The only condition</strong>: to stop anyone else closing your account, you must enter <strong>the mobile number bound to the account and confirm an SMS verification code</strong>. We impose no other condition.</li>
+                            <li><strong>What happens</strong>: the account is <strong>closed immediately</strong> and you are signed out. Your account details, cloud-backed health data and subscription linkage are <strong>deleted or anonymised on our servers</strong>, with nothing retained, and the account cannot be restored. Should a system fault prevent the backend from completing this, we will finish verification and erasure <strong>within 15 working days</strong>.</li>
+                            <li>Export your data first — it cannot be recovered afterwards.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.4 Withdrawing consent</span>
+                        <ul>
+                            <li><strong>Withdraw consent to this policy as a whole</strong>: uninstalling the app constitutes withdrawal; or email <strong>1558406139@qq.com</strong> to declare withdrawal and we will stop the corresponding processing <strong>within 15 working days</strong>.</li>
+                            <li><strong>Camera permission</strong>: system Settings → Apps → VitaKeeper → Permissions → Camera → off. You can still enter data manually.</li>
+                            <li><strong>Notification permission</strong>: system Settings → Apps → VitaKeeper → Notifications → off, or turn reminders off under "Profile → Health Reminders".</li>
+                            <li><strong>Cloud storage</strong>: "Profile → Account → Data Management → Cloud Backup → turn the switch off". Your health data then stays on your device only.</li>
+                            <li><strong>Ad personalisation</strong>: Premium subscribers see no ads at all; you can also reset or disable your advertising identifier in system Settings → Privacy → Ads.</li>
+                            <li>Withdrawal does not affect the lawfulness of processing carried out on the basis of your consent before it was withdrawn. Withdrawing a specific permission may disable the related feature but never affects the app's core on-device health-record function.</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">4.5 Response times</span>: correction, deletion and account-closure requests you can perform in the app <strong>take effect immediately</strong>. For requests requiring manual handling (including deletion, account closure, withdrawal of consent and data-copy requests submitted by email), we undertake to complete verification, action and reply <strong>within 15 working days of receipt</strong>.</li>
+                    <li><span class="highlight">4.6 Complaints</span>: if you believe our handling of your personal information has harmed your rights, submit a complaint via "Profile → Other → Feedback" or email <strong>1558406139@qq.com</strong>; we will reply <strong>within 15 working days</strong>. If our reply does not satisfy you, you may complain to the competent regulator or bring proceedings before a court of competent jurisdiction.</li>
+                    <li><span class="highlight">4.7 Minors</span>: we maintain dedicated processing rules for children under 14 — see the <strong>Minors' Personal Information Protection Rules</strong>: <a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a> (also reachable at "Profile → Other → Minors' Privacy Policy").</li>
                 </ul>
             </div>
 

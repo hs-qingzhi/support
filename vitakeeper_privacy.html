@@ -166,10 +166,14 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 最后更新：2026年06月21日
+                🔒 最后更新：2026年08月03日
             </div>
-            
+
             <p>康护APP是一款健康管理应用，用于记录血压、血糖、血脂和BMI数据，提供健康提醒、家庭成员管理、数据统计分析、OCR图片识别等功能。我们十分尊重您的个人信息和健康数据，并会尽全力保护您的信息安全。本隐私政策根据相关法律法规制定，明确说明我们如何收集、使用、存储和保护您的信息。</p>
+
+            <p><strong>在您阅读本隐私政策并点击「同意并继续」之前，我们以及本政策列明的任何第三方 SDK 均不会收集您的任何个人信息、不会申请任何系统权限、不会读取设备标识符。</strong>所有统计、推送、广告、崩溃监控等第三方服务均在您同意之后才会初始化。</p>
+
+            <p>如果您是未满 14 周岁的儿童，或您是儿童的父母/其他监护人，请另行阅读<strong>《康护 APP 未成年人个人信息保护规则》</strong>：<a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy.html</a></p>
             
             <div class="section">
                 <h2><span class="icon">📊</span>一、收集信息的方式和范围</h2>
@@ -180,8 +184,11 @@
                 <ul>
                     <li><strong>友盟统计服务（Umeng）</strong>：用于 APP 使用情况统计、性能优化与崩溃监控。服务收集设备信息（设备型号、操作系统版本、网络类型、IP 地址、传感器列表、AndroidID）和事件数据（如功能使用、订阅转化、付费墙触达），但不会收集您的健康数据明细。</li>
                     <li><strong>友盟推送服务（Umeng Push）</strong>：用于向您发送健康提醒和重要通知，使用 APNs/Push token 等设备识别信息。</li>
+                    <li><strong>阿里云消息通道 ACCS</strong>（包名 com.taobao.accs，由上述友盟推送 SDK 内嵌集成，仅国内渠道）：用于维持推送长连接、保证健康提醒能及时送达。为判断连接可用性与选择接入点，该通道会读取<strong>网络状态信息</strong>（网络连接状态、网络类型如 WIFI/移动网络、是否漫游）及 <strong>IP 地址</strong>。不收集您的健康数据。</li>
+                    <li><strong>Google Play 服务（Google Mobile Services，Google 提供）</strong>（<strong>同上，仅 iOS 版与 Google Play 版启用</strong>）：为 Firebase 推送与 Google AdMob 广告提供基础运行环境。会读取<strong>已安装应用信息</strong>（仅查询 Google Play 商店组件 com.android.vending 的版本，用于判断服务可用性）及设备识别信息。<strong>该服务仅在您同意本隐私政策后才会被启动</strong>。</li>
+                    <li><strong>移动安全联盟 MSA SDK</strong>（包名 com.bun.miitmdid，仅国内渠道）：由广告 SDK 依赖集成，用于获取<strong>匿名设备标识符 OAID/VAID/AAID</strong>，替代 IMEI 等不可变更的硬件标识，供广告归因与反作弊使用。您可在系统设置中重置该标识。</li>
                     <li><strong>百度 OCR 服务（Baidu Cloud OCR）</strong>：用于识别血压计、血糖仪等健康设备屏幕上的数据。<strong>当您使用拍照识别功能时，您拍摄的照片会上传至百度云服务器进行 OCR 处理</strong>，识别完成后图片不会保留在我们的服务器，但请避免在照片中包含与健康设备无关的敏感信息（如身份证、面部、银行卡等）。</li>
-                    <li><strong>Firebase（Google 提供）</strong>：包括 Firebase Cloud Messaging（推送通知）和 Firebase Remote Config（远程配置）。可能收集设备识别信息、IP 地址和 App 安装信息。</li>
+                    <li><strong>Firebase（Google 提供）</strong>（<strong>仅 iOS 版与 Google Play 版启用；华为、荣耀、小米、OPPO、vivo、应用宝等国内安卓渠道包不启用</strong>）：包括 Firebase Cloud Messaging（推送通知）和 Firebase Remote Config（远程配置）。可能收集设备识别信息、IP 地址和 App 安装信息。<strong>该服务由境外主体处理，涉及个人信息跨境提供，详见「1.5 个人信息的跨境提供」。</strong></li>
                     <li><strong>Google AdMob 广告 SDK</strong>（仅国际版/海外渠道）：在免费用户开屏页展示广告。AdMob 可能收集广告标识符（IDFA / IDFV）、IP 地址、设备信息和广告交互数据。订阅 Premium 用户不会展示广告。</li>
                     <li><strong>字节跳动穿山甲（Pangle / GroMore 聚合）SDK</strong>（仅国内渠道）：在免费用户开屏页展示广告。可能收集网络信息（IP 地址）、传感器信息（传感器列表，用于广告反作弊与设备识别）及设备标识信息（OAID 等；MAC/IMEI 已禁用，仅基础识别）。订阅 Premium 用户不会展示广告。</li>
                     <li><strong>HTTPDNS-android</strong>（开发者：杭州阿里云智能科技有限公司，仅国内渠道）：由统计/推送等第三方 SDK 依赖集成，用于域名解析优化、防止 DNS 劫持，保障网络请求的稳定与安全。可能收集网络信息（IP 地址）。SDK 隐私政策：<a href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202112071754_83380.html">https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202112071754_83380.html</a></li>
@@ -190,6 +197,17 @@
                 </ul>
             </li>
             <li><span class="highlight">1.4 用户反馈与投诉</span>：您可以在APP“我的”页面中的“问题反馈”功能提交反馈或投诉，涉及个人信息或健康数据时，我们会严格按照隐私政策处理。</li>
+            <li><span class="highlight">1.5 个人信息的跨境提供</span>
+                <ul>
+                    <li><strong>适用范围</strong>：<strong>仅 iOS 版与 Google Play 版</strong>存在跨境提供。华为、荣耀、小米、OPPO、vivo、应用宝、360、百度、豌豆荚等<strong>国内安卓渠道包不集成启用 Google 服务，不向境外提供任何个人信息</strong>。</li>
+                    <li><strong>境外接收方</strong>：Google LLC（注册地：美国加利福尼亚州）。</li>
+                    <li><strong>联系方式</strong>：<a href="https://support.google.com/policies">https://support.google.com/policies</a>；隐私政策 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                    <li><strong>处理目的</strong>：下发推送通知（Firebase Cloud Messaging）、获取版本更新等远程配置（Firebase Remote Config）、投放与结算广告（Google AdMob，仅免费用户）。</li>
+                    <li><strong>处理方式</strong>：由 Google 在其境外服务器接收并处理。</li>
+                    <li><strong>个人信息种类</strong>：设备识别信息、IP 地址、App 安装信息、广告标识符（IDFA / IDFV）。<strong>不包含您的健康数据、成员资料与手机号。</strong></li>
+                    <li><strong>您的权利</strong>：您可通过在系统设置中关闭通知权限、订阅 Premium（不再展示广告）或卸载 App 撤回上述跨境提供；也可发送邮件至 1558406139@qq.com 要求我们停止。</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -245,11 +263,47 @@
             </div>
 
             <div class="section">
-                <h2><span class="icon">⚖️</span>五、用户权利</h2>
+                <h2><span class="icon">⚖️</span>五、您的权利与行使方式</h2>
+                <p>您对自己的个人信息享有以下权利。以下每项权利在 App 内均有对应的操作入口，<strong>无需联系客服、无需付费、无需提供身份证件或手持照片等额外材料</strong>。</p>
                 <ul>
-                    <li>您有权访问、修改或删除自己的健康数据。</li>
-                    <li>您可以选择退出部分数据收集或功能，但可能影响某些服务体验。</li>
-                    <li>在法律允许范围内，您可随时撤回对隐私政策的同意。</li>
+                    <li><span class="highlight">5.1 查阅与更正</span>
+                        <ul>
+                            <li><strong>健康数据</strong>：在「首页」或各记录列表中点击任一条血压、血糖、血脂、BMI 记录即可查阅并修改。</li>
+                            <li><strong>成员资料</strong>（姓名、性别、生日、头像）：「我的 → 成员管理 → 点击成员」即可编辑。</li>
+                            <li><strong>账号信息</strong>（手机号、注册时间、用户 ID）：「我的 → 账号管理」可查阅。</li>
+                            <li><strong>数据副本</strong>：「我的 → 账号管理 → 数据管理 → 导出数据」，可将您的全部健康数据导出留存。</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">5.2 删除个人信息</span>
+                        <ul>
+                            <li><strong>单条健康记录</strong>：点击该条记录打开详情，点击右上角「删除」按钮，<strong>即时生效</strong>。</li>
+                            <li><strong>成员及其全部记录</strong>：「我的 → 成员管理 → 删除成员」，该成员名下的健康记录一并删除，<strong>即时生效</strong>。</li>
+                            <li><strong>云端备份数据</strong>：「我的 → 账号管理 → 数据管理 → 云备份 → 删除云端数据」，服务器上已备份的健康数据将被永久删除，本机数据不受影响。</li>
+                            <li><strong>反馈内容与图片</strong>：「我的 → 其他 → 意见反馈 → 我的反馈」中删除，记录即时移除、图片随后清理。</li>
+                            <li>若您通过上述入口无法完成删除，可发送邮件至 <strong>1558406139@qq.com</strong>，我们将在 <strong>15 个工作日</strong>内核查并完成处理。</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">5.3 注销账号</span>
+                        <ul>
+                            <li><strong>操作路径</strong>：「我的 → 点击顶部账号卡片 → 账号管理 → 删除账号」。</li>
+                            <li><strong>唯一条件</strong>：为防止他人恶意注销您的账号，需输入<strong>本账号绑定的手机号并通过短信验证码完成身份核验</strong>。除此之外我们不设置任何其他条件。</li>
+                            <li><strong>处理结果</strong>：验证通过后账号<strong>即时注销</strong>，App 自动退出登录；您的账号信息、云端备份的健康数据、订阅关联记录将在<strong>服务器后台一并删除或匿名化</strong>，不作保留，账号不可恢复。若因系统异常导致后台未能同步完成，我们将在<strong>15 个工作日</strong>内完成核查与清除。</li>
+                            <li>注销前请先使用「导出数据」自行备份，注销后数据无法找回。</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">5.4 撤回同意</span>
+                        <ul>
+                            <li><strong>撤回对本隐私政策的整体同意</strong>：卸载 App 即视为撤回；或发送邮件至 <strong>1558406139@qq.com</strong> 声明撤回，我们将在 <strong>15 个工作日</strong>内停止对应处理活动。</li>
+                            <li><strong>撤回相机权限</strong>：手机「系统设置 → 应用管理 → 康护 → 权限 → 相机 → 关闭」，关闭后仍可手动输入数据。</li>
+                            <li><strong>撤回通知权限</strong>：手机「系统设置 → 应用管理 → 康护 → 通知 → 关闭」，或在「我的 → 健康提醒」中关闭提醒。</li>
+                            <li><strong>撤回云端存储授权</strong>：「我的 → 账号管理 → 数据管理 → 云备份 → 关闭云备份状态开关」，关闭后不再上传，健康数据仅保存在本机；如需一并清除已上传的副本，请使用同页的「删除云端数据」。</li>
+                            <li><strong>撤回广告个性化</strong>：订阅 Premium 后不再展示任何广告；也可在手机「系统设置 → 隐私 → 广告」中重置或关闭广告标识符（OAID）。</li>
+                            <li>撤回同意不影响撤回前基于您的同意已进行的个人信息处理活动的效力。撤回部分授权可能导致相应功能不可用，但不影响 App 基础的本地健康记录功能。</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">5.5 响应时限承诺</span>：对于 App 内可直接操作的更正、删除、注销请求，均<strong>即时生效</strong>；对于需人工处理的请求（含邮件提交的删除、注销、撤回同意、查阅副本请求），我们承诺在<strong>收到请求之日起 15 个工作日内</strong>完成核查与处理并向您反馈结果。</li>
+                    <li><span class="highlight">5.6 投诉与举报</span>：如您认为我们的个人信息处理行为损害了您的合法权益，可通过「我的 → 其他 → 意见反馈」提交，或发送邮件至 <strong>1558406139@qq.com</strong>，我们将在 <strong>15 个工作日</strong>内答复。若您对答复不满意，可向所在地网信、电信、公安、市场监管等主管部门投诉举报，或向有管辖权的人民法院提起诉讼。</li>
+                    <li><span class="highlight">5.7 未成年人</span>：我们为不满 14 周岁的儿童制定了专门的个人信息处理规则，详见<strong>《康护 APP 未成年人个人信息保护规则》</strong>：<a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy.html</a>（也可在「我的 → 其他 → 未成年人隐私政策」中查看）。</li>
                 </ul>
             </div>
 
