@@ -150,7 +150,7 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 Last Updated: August 03, 2026
+                🔒 Last Updated: August 04, 2026
             </div>
 
             <p>VitaKeeper APP is a health management application for recording blood pressure, blood sugar, blood lipids, and BMI data, providing health reminders, family member management, data statistical analysis, OCR image recognition, and other functions. We highly respect your personal information and health data and will do our utmost to protect your information security. This privacy policy is formulated in accordance with relevant laws and regulations to clearly explain how we collect, use, store, and protect your information.</p>
@@ -171,7 +171,7 @@
                     <li><strong>Alibaba Cloud ACCS message channel</strong> (package <code>com.taobao.accs</code>, embedded inside the Umeng Push SDK above): maintains the persistent push connection so health reminders arrive on time. To evaluate connectivity and select an access point it reads <strong>network state</strong> (connection status, network type such as Wi-Fi / cellular, roaming flag) and the <strong>IP address</strong>. It does not collect your health data.</li>
                     <li><strong>Google Mobile Services (GMS, provided by Google)</strong> (<strong>as above, enabled only in the iOS and Google Play builds</strong>): provides the runtime foundation for Firebase Cloud Messaging and Google AdMob. It reads <strong>installed-application information</strong> (only querying the version of the Google Play Store component <code>com.android.vending</code> to determine service availability) and device identifiers. <strong>It is started only after you agree to this privacy policy.</strong></li>
                     <li><strong>MSA SDK</strong> (package <code>com.bun.miitmdid</code>, mainland China distribution channels only): required by the advertising SDK to obtain the <strong>anonymous device identifiers OAID / VAID / AAID</strong> in place of immutable hardware identifiers such as IMEI, for ad attribution and anti-fraud. You can reset this identifier in your system settings.</li>
-                    <li><strong>Baidu OCR Service</strong>: Used to recognize data on health device screens to improve data entry efficiency.</li>
+                    <li><strong>On-device text recognition (Google ML Kit Text Recognition)</strong>: Used to read values from health-device screens and lab reports. <strong>Recognition runs entirely on your device; photos are never uploaded to any server or shared with any third party.</strong></li>
                     <li><strong>Firebase (provided by Google)</strong> (<strong>enabled only in the iOS and Google Play builds; not enabled in the Huawei, Honor, Xiaomi, OPPO, vivo, Tencent MyApp and other mainland-China Android channel builds</strong>): Includes Firebase Cloud Messaging (push notifications) and Firebase Remote Config (remote configuration). May collect device identifiers, IP address, and app installation information. <strong>This service is operated outside mainland China; see "1.5 Cross-border transfer of personal information".</strong></li>
                     <li><strong>Google AdMob Advertising SDK</strong>: Displays ads on the splash screen for free users. AdMob may collect advertising identifiers (IDFA / IDFV), IP address, device information, and ad interaction data. Premium subscribers will not see ads.</li>
                     <li><strong>In-App Purchase (Apple StoreKit / Google Play Billing)</strong>: Used to process subscriptions and payments. Transactions are managed directly by Apple or Google; we only receive your subscription status and expiration date and do not access your payment credentials.</li>
@@ -225,25 +225,23 @@
                         <ul>
                             <li><strong>Health data</strong>: tap any blood pressure, blood glucose, blood lipid or BMI record on the home screen or in a record list to view and edit it.</li>
                             <li><strong>Member profile</strong> (name, gender, date of birth, avatar): "Profile → Member Management → tap the member".</li>
-                            <li><strong>Account details</strong> (mobile number, registration date, user ID): "Profile → Account".</li>
-                            <li><strong>Copy of your data</strong>: "Profile → Account → Data Management → Export Data".</li>
+                            <li><strong>Copy of your data</strong>: "Profile → Other → Export Data" exports all of your health data as JSON or CSV.</li>
                         </ul>
                     </li>
                     <li><span class="highlight">4.2 Deletion</span>
                         <ul>
                             <li><strong>A single record</strong>: open the record and tap "Delete" in the top-right corner. <strong>Takes effect immediately.</strong></li>
                             <li><strong>A member and all their records</strong>: "Profile → Member Management → Delete Member". <strong>Takes effect immediately.</strong></li>
-                            <li><strong>Cloud backup data</strong>: "Profile → Account → Data Management → Cloud Backup → Delete Cloud Data". The backed-up copy on our servers is permanently erased; on-device data is unaffected.</li>
+                            <li><strong>Everything on the device</strong>: uninstalling the app deletes all health data stored on it. Because nothing is uploaded to our servers, we hold no copy afterwards.</li>
                             <li><strong>Feedback and images</strong>: "Profile → Other → Feedback → My Feedback".</li>
                             <li>If any of these entry points does not work for you, email <strong>1558406139@qq.com</strong> and we will verify and complete the deletion <strong>within 15 working days</strong>.</li>
                         </ul>
                     </li>
-                    <li><span class="highlight">4.3 Closing your account</span>
+                    <li><span class="highlight">4.3 About accounts</span>
                         <ul>
-                            <li><strong>Where</strong>: "Profile → tap the account card at the top → Account → Delete Account".</li>
-                            <li><strong>The only condition</strong>: to stop anyone else closing your account, you must enter <strong>the mobile number bound to the account and confirm an SMS verification code</strong>. We impose no other condition.</li>
-                            <li><strong>What happens</strong>: the account is <strong>closed immediately</strong> and you are signed out. Your account details, cloud-backed health data and subscription linkage are <strong>deleted or anonymised on our servers</strong>, with nothing retained, and the account cannot be restored. Should a system fault prevent the backend from completing this, we will finish verification and erasure <strong>within 15 working days</strong>.</li>
-                            <li>Export your data first — it cannot be recovered afterwards.</li>
+                            <li><strong>This app has no account system.</strong> There is no sign-up, we do not collect a phone number and we send no SMS codes, so there is nothing to "close".</li>
+                            <li>Premium is held by your App Store / Google Play account and is unrelated to us. View, cancel or refund a subscription in that store's subscription settings.</li>
+                            <li>To erase everything, simply uninstall the app — your health data lives only on your device and we keep no copy on any server.</li>
                         </ul>
                     </li>
                     <li><span class="highlight">4.4 Withdrawing consent</span>
@@ -251,12 +249,11 @@
                             <li><strong>Withdraw consent to this policy as a whole</strong>: uninstalling the app constitutes withdrawal; or email <strong>1558406139@qq.com</strong> to declare withdrawal and we will stop the corresponding processing <strong>within 15 working days</strong>.</li>
                             <li><strong>Camera permission</strong>: system Settings → Apps → VitaKeeper → Permissions → Camera → off. You can still enter data manually.</li>
                             <li><strong>Notification permission</strong>: system Settings → Apps → VitaKeeper → Notifications → off, or turn reminders off under "Profile → Health Reminders".</li>
-                            <li><strong>Cloud storage</strong>: "Profile → Account → Data Management → Cloud Backup → turn the switch off". Your health data then stays on your device only.</li>
                             <li><strong>Ad personalisation</strong>: Premium subscribers see no ads at all; you can also reset or disable your advertising identifier in system Settings → Privacy → Ads.</li>
                             <li>Withdrawal does not affect the lawfulness of processing carried out on the basis of your consent before it was withdrawn. Withdrawing a specific permission may disable the related feature but never affects the app's core on-device health-record function.</li>
                         </ul>
                     </li>
-                    <li><span class="highlight">4.5 Response times</span>: correction, deletion and account-closure requests you can perform in the app <strong>take effect immediately</strong>. For requests requiring manual handling (including deletion, account closure, withdrawal of consent and data-copy requests submitted by email), we undertake to complete verification, action and reply <strong>within 15 working days of receipt</strong>.</li>
+                    <li><span class="highlight">4.5 Response times</span>: correction and deletion requests you can perform in the app <strong>take effect immediately</strong>. For requests requiring manual handling (including deletion, withdrawal of consent and data-copy requests submitted by email), we undertake to complete verification, action and reply <strong>within 15 working days of receipt</strong>.</li>
                     <li><span class="highlight">4.6 Complaints</span>: if you believe our handling of your personal information has harmed your rights, submit a complaint via "Profile → Other → Feedback" or email <strong>1558406139@qq.com</strong>; we will reply <strong>within 15 working days</strong>. If our reply does not satisfy you, you may complain to the competent regulator or bring proceedings before a court of competent jurisdiction.</li>
                     <li><span class="highlight">4.7 Minors</span>: we maintain dedicated processing rules for children under 14 — see the <strong>Minors' Personal Information Protection Rules</strong>: <a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a> (also reachable at "Profile → Other → Minors' Privacy Policy").</li>
                 </ul>

@@ -150,7 +150,7 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 最後更新：2026年08月03日
+                🔒 最後更新：2026年08月04日
             </div>
 
             <p>康護APP是一款健康管理應用，用於記錄血壓、血糖、血脂和BMI數據，提供健康提醒、家庭成員管理、數據統計分析、OCR圖片識別等功能。我們十分尊重您的個人信息和健康數據，並會盡全力保護您的信息安全。本隱私政策根據相關法律法規制定，明確說明我們如何收集、使用、存儲和保護您的信息。</p>
@@ -171,7 +171,7 @@
                     <li><strong>阿里雲訊息通道 ACCS</strong>（套件名 <code>com.taobao.accs</code>，由上述友盟推送 SDK 內嵌整合）：用於維持推播長連線、確保健康提醒能及時送達。為判斷連線可用性與選擇接入點，該通道會讀取<strong>網路狀態資訊</strong>（網路連線狀態、網路類型如 Wi-Fi／行動網路、是否漫遊）及 <strong>IP 位址</strong>。不收集您的健康數據。</li>
                     <li><strong>Google 行動服務（GMS，Google 提供）</strong>（<strong>同上，僅 iOS 版與 Google Play 版啟用</strong>）：為 Firebase 推播與 Google AdMob 廣告提供基礎執行環境。會讀取<strong>已安裝應用資訊</strong>（僅查詢 Google Play 商店元件 <code>com.android.vending</code> 的版本，用於判斷服務可用性）及裝置識別資訊。<strong>該服務僅在您同意本隱私政策後才會被啟動。</strong></li>
                     <li><strong>MSA SDK</strong>（套件名 <code>com.bun.miitmdid</code>，僅中國大陸通路）：由廣告 SDK 相依整合，用於取得<strong>匿名裝置識別碼 OAID／VAID／AAID</strong>，替代 IMEI 等不可變更的硬體識別碼，供廣告歸因與反作弊使用。您可在系統設定中重設該識別碼。</li>
-                    <li><strong>百度OCR服務</strong>：用於識別健康設備屏幕上的數據，提高數據錄入效率。</li>
+                    <li><strong>裝置端文字辨識（Google ML Kit Text Recognition）</strong>：用於辨識血壓計、血糖儀等健康裝置螢幕及健檢報告上的數據。<strong>辨識全程在您的裝置本機完成，照片不會上傳至任何伺服器，也不會提供給任何第三方</strong>。</li>
                     <li><strong>Firebase（Google 提供）</strong>（<strong>僅 iOS 版與 Google Play 版啟用；華為、榮耀、小米、OPPO、vivo、應用寶等中國大陸安卓通路包不啟用</strong>）：包括 Firebase Cloud Messaging（推送通知）和 Firebase Remote Config（遠程配置）。可能收集設備識別信息、IP 位址和 App 安裝信息。<strong>該服務由境外主體處理，涉及個人資料跨境提供，詳見「1.5 個人資料的跨境提供」。</strong></li>
                     <li><strong>Google AdMob 廣告 SDK</strong>：在免費用戶開屏頁展示廣告。AdMob 可能收集廣告標識符（IDFA / IDFV）、IP 位址、設備信息和廣告互動數據。訂閱 Premium 用戶不會展示廣告。</li>
                     <li><strong>App 內購買（Apple StoreKit / Google Play Billing）</strong>：用於處理訂閱與支付。交易由 Apple 或 Google 直接管理；我們僅接收訂閱狀態和到期時間，不接觸您的支付憑據。</li>
@@ -225,25 +225,23 @@
                         <ul>
                             <li><strong>健康數據</strong>：在「首頁」或各記錄清單中點選任一筆血壓、血糖、血脂、BMI 記錄即可查閱並修改。</li>
                             <li><strong>成員資料</strong>（姓名、性別、生日、大頭貼）：「我的 → 成員管理 → 點選成員」。</li>
-                            <li><strong>帳號資訊</strong>（手機號碼、註冊時間、使用者 ID）：「我的 → 帳號管理」。</li>
-                            <li><strong>資料副本</strong>：「我的 → 帳號管理 → 資料管理 → 匯出資料」。</li>
+                            <li><strong>資料副本</strong>：「我的 → 其他 → 匯出資料」，可將您的全部健康數據以 JSON／CSV 匯出留存。</li>
                         </ul>
                     </li>
                     <li><span class="highlight">4.2 刪除個人資料</span>
                         <ul>
                             <li><strong>單筆健康記錄</strong>：點選該記錄開啟詳情，點選右上角「刪除」，<strong>即時生效</strong>。</li>
                             <li><strong>成員及其全部記錄</strong>：「我的 → 成員管理 → 刪除成員」，<strong>即時生效</strong>。</li>
-                            <li><strong>雲端備份資料</strong>：「我的 → 帳號管理 → 資料管理 → 雲端備份 → 刪除雲端資料」，伺服器上已備份的健康數據將被永久刪除，本機資料不受影響。</li>
+                            <li><strong>全部本機資料</strong>：解除安裝 APP 即刪除裝置上的全部健康數據。由於資料不上傳伺服器，解除安裝後我方不留存任何副本。</li>
                             <li><strong>回饋內容與圖片</strong>：「我的 → 其他 → 意見回饋 → 我的回饋」。</li>
                             <li>若您透過上述入口無法完成刪除，可寄送電子郵件至 <strong>1558406139@qq.com</strong>，我們將在 <strong>15 個工作日</strong>內查核並完成處理。</li>
                         </ul>
                     </li>
-                    <li><span class="highlight">4.3 註銷帳號</span>
+                    <li><span class="highlight">4.3 關於帳號</span>
                         <ul>
-                            <li><strong>操作路徑</strong>：「我的 → 點選頂部帳號卡片 → 帳號管理 → 刪除帳號」。</li>
-                            <li><strong>唯一條件</strong>：為防止他人惡意註銷您的帳號，需輸入<strong>本帳號綁定的手機號碼並透過簡訊驗證碼完成身分核驗</strong>。除此之外我們不設置任何其他條件。</li>
-                            <li><strong>處理結果</strong>：驗證通過後帳號<strong>即時註銷</strong>，APP 自動登出；您的帳號資訊、雲端備份的健康數據、訂閱關聯記錄將在<strong>伺服器後台一併刪除或匿名化</strong>，不作保留，帳號不可復原。若因系統異常導致後台未能同步完成，我們將在<strong>15 個工作日</strong>內完成查核與清除。</li>
-                            <li>註銷前請先使用「匯出資料」自行備份，註銷後資料無法找回。</li>
+                            <li><strong>本 APP 不設帳號體系</strong>，不需要註冊、不收集手機號碼、不發送簡訊驗證碼，因此不存在「註銷帳號」這項操作。</li>
+                            <li>會員權益由 App Store／Google Play 帳戶持有，與本 APP 無關；訂閱的查看、取消與退款請在對應商店的訂閱管理中進行。</li>
+                            <li>如需徹底清除您的資料，解除安裝 APP 即可——您的健康數據僅存於本機，我方伺服器不留存任何副本。</li>
                         </ul>
                     </li>
                     <li><span class="highlight">4.4 撤回同意</span>
@@ -251,12 +249,11 @@
                             <li><strong>撤回對本隱私政策的整體同意</strong>：解除安裝 APP 即視為撤回；或寄送電子郵件至 <strong>1558406139@qq.com</strong> 聲明撤回，我們將在 <strong>15 個工作日</strong>內停止對應處理活動。</li>
                             <li><strong>撤回相機權限</strong>：手機「系統設定 → 應用程式 → 康護 → 權限 → 相機 → 關閉」，關閉後仍可手動輸入資料。</li>
                             <li><strong>撤回通知權限</strong>：手機「系統設定 → 應用程式 → 康護 → 通知 → 關閉」，或在「我的 → 健康提醒」中關閉提醒。</li>
-                            <li><strong>撤回雲端儲存授權</strong>：「我的 → 帳號管理 → 資料管理 → 雲端備份 → 關閉雲端備份狀態開關」，關閉後不再上傳，健康數據僅保存在本機；如需一併清除已上傳的副本，請使用同頁的「刪除雲端資料」。</li>
                             <li><strong>撤回廣告個人化</strong>：訂閱 Premium 後不再展示任何廣告；也可在手機「系統設定 → 隱私 → 廣告」中重設或關閉廣告識別碼。</li>
                             <li>撤回同意不影響撤回前基於您的同意已進行的個人資料處理活動的效力。撤回部分授權可能導致相應功能不可用，但不影響 APP 基礎的本機健康記錄功能。</li>
                         </ul>
                     </li>
-                    <li><span class="highlight">4.5 回應時限承諾</span>：對於 APP 內可直接操作的更正、刪除、註銷請求，均<strong>即時生效</strong>；對於需人工處理的請求（含以電子郵件提交的刪除、註銷、撤回同意、查閱副本請求），我們承諾在<strong>收到請求之日起 15 個工作日內</strong>完成查核與處理並向您回覆結果。</li>
+                    <li><span class="highlight">4.5 回應時限承諾</span>：對於 APP 內可直接操作的更正與刪除請求，均<strong>即時生效</strong>；對於需人工處理的請求（含以電子郵件提交的刪除、撤回同意、查閱副本請求），我們承諾在<strong>收到請求之日起 15 個工作日內</strong>完成查核與處理並向您回覆結果。</li>
                     <li><span class="highlight">4.6 申訴與檢舉</span>：如您認為我們的個人資料處理行為損害了您的合法權益，可透過「我的 → 其他 → 意見回饋」提交，或寄送電子郵件至 <strong>1558406139@qq.com</strong>，我們將在 <strong>15 個工作日</strong>內答覆。若您對答覆不滿意，可向主管機關申訴檢舉，或向有管轄權的法院提起訴訟。</li>
                     <li><span class="highlight">4.7 未成年人</span>：我們為未滿 14 歲的兒童訂定了專門的個人資料處理規則，詳見<strong>《康護 APP 未成年人個人資料保護規則》</strong>：<a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_zh_tw.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_zh_tw.html</a>（也可在「我的 → 其他 → 未成年人隱私政策」中查看）。</li>
                 </ul>
