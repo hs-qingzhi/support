@@ -150,12 +150,12 @@
         
         <div class="content">
             <div class="update-date">
-                🔒 最終更新：2026年08月04日
+                🔒 最終更新：2026年08月17日
             </div>
 
             <p>VitaKeeper APPは、血圧、血糖、血中脂質、BMIデータの記録、健康リマインダー、家族メンバー管理、データ統計分析、OCR画像認識等の機能を提供する健康管理アプリケーションです。私たちはお客様の個人情報と健康データを非常に重視し、お客様の情報セキュリティを最大限に保護いたします。本プライバシーポリシーは関連する法律法規に基づいて策定され、私たちがどのようにお客様の情報を収集、利用、保存、保護するかを明確に説明いたします。</p>
 
-            <p><strong>お客様が本プライバシーポリシーをお読みになり「同意して続行」をタップされるまでは、当社および本ポリシーに記載のいかなる第三者 SDK も、お客様の個人情報を一切収集せず、システム権限を要求せず、デバイス識別子を読み取りません。</strong>統計・プッシュ・広告・クラッシュ監視等の第三者サービスは、すべてお客様の同意後にのみ初期化されます。</p>
+            <p><strong>お客様が本プライバシーポリシーをお読みになり「同意して続行」をタップされるまでは、当社および本ポリシーに記載のいかなる第三者 SDK も、お客様の個人情報を一切収集せず、システム権限を要求せず、デバイス識別子を読み取りません。</strong>統計・プッシュ・クラッシュ監視等の第三者サービスは、すべてお客様の同意後にのみ初期化されます。</p>
 
             <p>お客様が 14 歳未満のお子様、またはその保護者である場合は、<strong>「未成年者の個人情報保護規則」</strong>も併せてご確認ください：<a href="https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html">https://hs-qingzhi.github.io/support/vitakeeper_minor_privacy_en.html</a></p>
             
@@ -169,11 +169,9 @@
                     <li><strong>友盟統計サービス</strong>：APP利用状況統計とパフォーマンス最適化に使用されます。サービスはデバイス情報（デバイスモデル、オペレーティングシステムバージョン、ネットワークタイプ、IPアドレス）を収集する場合がありますが、お客様の健康データは収集しません。</li>
                     <li><strong>友盟プッシュサービス</strong>：お客様に健康リマインダーと重要な通知を送信するために使用され、APNs／Push token 等のデバイス識別情報を利用します。</li>
                     <li><strong>Alibaba Cloud ACCS メッセージチャネル</strong>（パッケージ名 <code>com.taobao.accs</code>、上記の友盟プッシュ SDK に内蔵）：プッシュの常時接続を維持し、健康リマインダーを遅延なく届けるために使用されます。接続可否の判定と接続先の選択のため、<strong>ネットワーク状態情報</strong>（接続状態、ネットワーク種別（Wi-Fi／モバイル）、ローミング有無）および <strong>IP アドレス</strong>を読み取ります。健康データは収集しません。</li>
-                    <li><strong>Google モバイル サービス（GMS、Google 提供）</strong>（<strong>同上、iOS 版と Google Play 版でのみ有効</strong>）：Firebase プッシュおよび Google AdMob 広告の実行基盤を提供します。<strong>インストール済みアプリ情報</strong>（サービス可用性を判定するため Google Play ストア コンポーネント <code>com.android.vending</code> のバージョンのみを照会）およびデバイス識別情報を読み取ります。<strong>本サービスはお客様が本プライバシーポリシーに同意された後にのみ起動します。</strong></li>
-                    <li><strong>MSA SDK</strong>（パッケージ名 <code>com.bun.miitmdid</code>、中国本土向けチャネルのみ）：広告 SDK の依存として組み込まれ、IMEI 等の変更不可能なハードウェア識別子に代わる<strong>匿名デバイス識別子 OAID／VAID／AAID</strong> を取得し、広告のアトリビューションと不正防止に使用します。当該識別子はシステム設定でリセットできます。</li>
+                    <li><strong>Google モバイル サービス（GMS、Google 提供）</strong>（<strong>同上、iOS 版と Google Play 版でのみ有効</strong>）：Firebase プッシュの実行基盤を提供します。<strong>インストール済みアプリ情報</strong>（サービス可用性を判定するため Google Play ストア コンポーネント <code>com.android.vending</code> のバージョンのみを照会）およびデバイス識別情報を読み取ります。<strong>本サービスはお客様が本プライバシーポリシーに同意された後にのみ起動します。</strong></li>
                     <li><strong>オンデバイス文字認識（Google ML Kit Text Recognition）</strong>：血圧計・血糖計などの健康デバイスの画面や健康診断結果の数値を読み取るために使用されます。<strong>認識はすべてお客様の端末内で完結し、写真がサーバーへ送信されることも第三者へ提供されることもありません。</strong></li>
                     <li><strong>Firebase（Google提供）</strong>（<strong>iOS 版と Google Play 版でのみ有効。華為・栄耀・小米・OPPO・vivo・応用宝等の中国本土向け Android チャネル版では無効</strong>）：Firebase Cloud Messaging（プッシュ通知）およびFirebase Remote Config（リモート設定）を含みます。デバイス識別情報、IPアドレス、アプリのインストール情報を収集する場合があります。<strong>本サービスは中国本土域外で処理されます。「1.5 個人情報の越境提供」をご参照ください。</strong></li>
-                    <li><strong>Google AdMob 広告SDK</strong>：無料ユーザーのスプラッシュ画面に広告を表示します。AdMobは広告識別子（IDFA / IDFV）、IPアドレス、デバイス情報、広告インタラクションデータを収集する場合があります。Premiumを購読されたユーザーには広告は表示されません。</li>
                     <li><strong>アプリ内課金（Apple StoreKit / Google Play Billing）</strong>：サブスクリプションと決済の処理に使用されます。取引はAppleまたはGoogleが直接管理し、当社はサブスクリプションのステータスと有効期限のみを受け取り、お客様の支払い情報にはアクセスしません。</li>
                 </ul>
             </li>
@@ -183,10 +181,10 @@
                     <li><strong>適用範囲</strong>：越境提供が生じるのは <strong>iOS 版と Google Play 版のみ</strong>です。華為・栄耀・小米・OPPO・vivo・応用宝・360・百度・豌豆莢等の<strong>中国本土向け Android チャネル版は Google サービスを有効化せず、個人情報を域外へ提供しません</strong>。</li>
                     <li><strong>域外の受領者</strong>：Google LLC（設立地：米国カリフォルニア州）。</li>
                     <li><strong>連絡先</strong>：<a href="https://support.google.com/policies">https://support.google.com/policies</a>；プライバシーポリシー <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-                    <li><strong>目的</strong>：プッシュ通知の配信（Firebase Cloud Messaging）、バージョン更新等のリモート設定の取得（Firebase Remote Config）、広告の配信と精算（Google AdMob、無料ユーザーのみ）。</li>
+                    <li><strong>目的</strong>：プッシュ通知の配信（Firebase Cloud Messaging）、バージョン更新等のリモート設定の取得（Firebase Remote Config）。</li>
                     <li><strong>方法</strong>：Google が域外のサーバーで受領し処理します。</li>
-                    <li><strong>情報の種類</strong>：デバイス識別情報、IP アドレス、アプリのインストール情報、広告識別子（IDFA / IDFV）。<strong>お客様の健康データ、メンバー情報、電話番号は含まれません。</strong></li>
-                    <li><strong>お客様の権利</strong>：システム設定で通知権限をオフにする、Premium を購読する（広告非表示）、またはアプリをアンインストールすることで上記の越境提供を撤回できます。1558406139@qq.com 宛のご連絡でも停止を求められます。</li>
+                    <li><strong>情報の種類</strong>：デバイス識別情報、IP アドレス、アプリのインストール情報。<strong>お客様の健康データ、メンバー情報、電話番号は含まれません。</strong></li>
+                    <li><strong>お客様の権利</strong>：システム設定で通知権限をオフにする、またはアプリをアンインストールすることで上記の越境提供を撤回できます。1558406139@qq.com 宛のご連絡でも停止を求められます。</li>
                 </ul>
             </li>
         </ul>
@@ -247,7 +245,6 @@
                             <li><strong>本ポリシー全体への同意の撤回</strong>：アプリのアンインストールをもって撤回とみなします。または <strong>1558406139@qq.com</strong> 宛に撤回のご連絡をいただければ、<strong>15 営業日以内</strong>に該当する取扱いを停止します。</li>
                             <li><strong>カメラ権限</strong>：端末の「設定 → アプリ → 康護 → 権限 → カメラ → オフ」。オフでも手入力は可能です。</li>
                             <li><strong>通知権限</strong>：端末の「設定 → アプリ → 康護 → 通知 → オフ」、または「マイ → 健康リマインダー」でリマインダーをオフ。</li>
-                            <li><strong>広告のパーソナライズ</strong>：Premium をご購読の場合は広告は一切表示されません。端末の「設定 → プライバシー → 広告」で広告識別子のリセットまたは無効化も可能です。</li>
                             <li>撤回は、撤回前に同意に基づいて行われた取扱いの適法性に影響しません。個別の権限を撤回すると該当機能はご利用いただけなくなりますが、APP の基本である端末内の健康記録機能には影響しません。</li>
                         </ul>
                     </li>
