@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知言 隱私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.75;
+            color: #2A241D;
+            background: #EDE6DA;
+            min-height: 100vh;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #F6F1E8;
+            border-radius: 14px;
+            box-shadow: 0 10px 32px rgba(42, 36, 29, 0.13);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #3A2C1F 0%, #1C1815 100%);
+            color: #EDE4D6;
+            padding: 36px 28px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '「';
+            position: absolute;
+            top: -28px; left: 10px;
+            font-size: 9rem;
+            line-height: 1;
+            color: #D08A57;
+            opacity: 0.13;
+            pointer-events: none;
+        }
+
+        .header h1 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+            color: #EDE4D6;
+        }
+
+        .header .subtitle {
+            font-size: 0.95rem;
+            opacity: 0.75;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content { padding: 30px 28px 36px; }
+
+        .update-date {
+            font-size: 0.9rem;
+            color: #6B6055;
+            margin-bottom: 24px;
+        }
+
+        .section { margin-bottom: 26px; }
+
+        .section h2 {
+            font-size: 1.08rem;
+            font-weight: 600;
+            color: #965632;
+            margin-bottom: 8px;
+        }
+
+        .section p { margin-bottom: 10px; }
+        .section p:last-child { margin-bottom: 0; }
+
+        strong { font-weight: 600; color: #2A241D; }
+        a { color: #965632; }
+
+        @media (max-width: 520px) {
+            body { padding: 16px 10px; }
+            .content { padding: 24px 18px 28px; }
+            .header { padding: 28px 20px 24px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>知言 隱私政策</h1>
+        <div class="subtitle">買斷制 · 除你主動提交的回饋外不收集資料</div>
+    </div>
+    <div class="content">
+        <div class="update-date">更新日期：2026 年 8 月 30 日</div>
+
+        <p>知言是一本隨身的話術手冊。它不需要知道你是誰,所以我們把「什麼都不收」當成設計前提,而不是事後補的承諾。</p>
+        <p><strong>唯一的例外是「回饋與聯絡」</strong> —— 你在那裡主動寫給我們的內容會發到我們的伺服器,因為不發就沒法回覆你。除此之外,應用不向我們傳送任何東西。詳見第七節。</p>
+
+        <div class="section">
+            <h2>一、我們存了什麼</h2>
+            <p>你的收藏和每日提醒設定<strong>只儲存在你自己的裝置上</strong>,不會上傳到任何伺服器。收藏裡存的是條目編號,不是你讀過什麼、複製過什麼的記錄。</p>
+            <p>解除安裝應用即全部清除。我們這裡沒有你的副本。</p>
+        </div>
+
+        <div class="section">
+            <h2>二、我們不收集什麼</h2>
+            <p>我們不收集你的姓名、手機號、通訊錄、簡訊、相簿、位置,也不讀取你的聊天記錄。</p>
+            <p>郵箱或微訊號只有一種情況會到我們這裡:<strong>你自己在回饋表單裡填了它</strong>(該欄選填,留空一樣能提交)。</p>
+            <p><strong>我們沒有整合任何第三方 SDK</strong> —— 沒有統計、沒有推送、沒有廣告、沒有崩潰上報。應用不申請通訊錄和簡訊權限,也不需要鍵盤的「完全訪問權限」。</p>
+        </div>
+
+        <div class="section">
+            <h2>三、購買相關</h2>
+            <p>知言只有一檔一次性買斷,沒有訂閱。支付由 Apple 處理,我們看不到你的支付資訊。</p>
+            <p>會員狀態以 Apple 的 StoreKit 判定,並快取在你自己的裝置上 —— <strong>我們沒有自建的驗票伺服器</strong>,購買憑證不會離開你的裝置。</p>
+        </div>
+
+        <div class="section">
+            <h2>四、通知</h2>
+            <p>每日一句是裝置本地通知,由你主動開啟。內容本來就在你的裝置上,不經過任何伺服器,我們也無從知道你有沒有開啟過。</p>
+        </div>
+
+        <div class="section">
+            <h2>五、內容更新</h2>
+            <p>應用會定期從我們的伺服器(hs-qingzhi.com)下載話術內容更新。<strong>這個請求不攜帶任何身份資訊</strong> —— 沒有賬號、沒有裝置標識、也不包含你在應用裡做過什麼。</p>
+            <p><strong>我們沒有為這個請求保留訪問日誌</strong>,也不做任何下載量或使用情況統計。拉取失敗時應用會靜默沿用已有內容,不影響使用。</p>
+        </div>
+
+        <div class="section">
+            <h2>六、你的資料歸你</h2>
+            <p>收藏和設定在你的裝置上,解除安裝即清除,我們這裡沒有副本。</p>
+            <p>我們持有的只有你提交過的回饋。<strong>你可以在回饋頁裡一鍵刪除自己的全部回饋</strong> —— 刪除即從我們的伺服器移除,不保留備份供我們檢視。</p>
+        </div>
+
+        <div class="section">
+            <h2>七、回饋與聯絡</h2>
+            <p>應用內「我的 - 回饋與聯絡」是一個提交表單。你按「提交」之後,下面這些會發到我們的伺服器:</p>
+            <ul>
+                <li>你寫的<strong>回饋正文</strong>,以及你選擇附上的<strong>圖片</strong>(最多 3 張,由你從相簿裡挑選)</li>
+                <li><strong>選填</strong>的郵箱或微訊號 —— 只是為了能回覆你,不填也能提交</li>
+                <li>一個<strong>隨機生成的匿名標識</strong>,以及應用版本號</li>
+            </ul>
+            <p>那個匿名標識只用於讓你在應用裡讀回自己提過的回饋和我們的回覆。<strong>它不包含、也無法還原你的裝置資訊或身份</strong>,我們不用它做統計、畫像或廣告,也不與任何第三方資料關聯。</p>
+            <p><strong>不提交回饋,以上資料一條都不會產生。</strong>你可以隨時在回饋頁裡刪除自己的全部回饋。</p>
+            <p>也可以繞開應用,直接寫信到 <a href="mailto:1558406139@qq.com">1558406139@qq.com</a>。</p>
+        </div>
+
+        <div class="section">
+            <h2>八、本政策的更新</h2>
+            <p>本政策如有更新,我們會修改本頁的更新日期。若將來新增任何形式的資料收集,我們會在收集發生之前先更新本頁,並同步更新 App Store 上的隱私標籤。</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
